@@ -1,0 +1,50 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+% \bibliography{referencias}
+
+% Titulo, autores, fecha.
+\title{Sensores de Temperatura}
+\author{C. Vásquez 1155057 \and K. López 1155800}
+
+% Inicio del documento
+\begin{document}
+\maketitle
+
+\section{Sensores de Temperatura}
+
+Los sensores son dispositivos que miden recciones físicas o químicas, como lo son el flujo volumétrico o la transferencia de calor, a travñes de cambios en resistencia o señal eléctrica. 
+
+La temperatura es la medición de la energía cinética promedio de las moléculas del gas, líquido o sólido en cuestión. Un sensor de temperatura es un dispositivo que es utilizado específicamente para medir temperatura. Estos sensores son capaces de describir de manera cuantitativa la temperatura, ya sea de un objeto o del entorno en el que el sensor se encuentra.
+
+\section{Tipos de Sensores de Temperatura}
+\subsection{Termopares}
+Los termopares son sensores compuestos de dos materiales distintos en su extremo
+sensible. Un voltaje se genera cuando existe un gradiente de temperatura entre el
+elemento del sensor que se encuentra a alta temperatura y la unión de baja temperatura que existe de referencia. El cambio en voltaje se puede reportar coo temperatura a través del efecto \textit{Seebeck}. Este efecto establece que el cambio en voltaje es linealmente proporcional al cambio en temperatura. Las dos variables están relacionadas entre sí a través de un coeficiente que es determinado por el material utilizado en el termopar.
+
+\subsection{Detectores de Temperatura Resistivos (RTDs)}
+
+Usualmente están hechos de un tipo de metal puro. Esta basado en la variación de la resistencia de un conductor con la temperatura. A través de las curvas de relación que existen entre la resistencia eléctrica y la temperatura, cuando la resistencia del metal se mide, es posible calcular una temperatura.
+
+\subsection{Termsitores}
+Un termsitor es un tipo específico de termómetro de resistencia. Están hechos de cables de metal conectados a una base cerámica hecha de varios semiconductores. Al igual que otros termómetros de resistencia, el cambio en temperatura puede ser calculado por el cambio en la resistencia. La relación resistencia-temperatura no es muy linear, es por esto que los termsistores sólo pueden ser utilizados en un rango pequeño de temperaturas a comparación de otros sensores de temperatura. A pesar de estas limitaciones, los termsistores son muy pequeños, baratos y muy sensibles a los cambios en temperatura, lo que los hace muy útiles en el área de electrónica.
+
+
+%  Bib
+% \renewcommand\refname{Referencias}
+% \printbibliography
+\end{document}

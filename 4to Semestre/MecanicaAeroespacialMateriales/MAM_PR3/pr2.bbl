@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{sim16}{online}{}
+      \name{author}{1}{}{%
+        {{hash=19774e622adecd70c42ac293605dd961}{%
+           family={SimScale},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{19774e622adecd70c42ac293605dd961}
+      \strng{fullhash}{19774e622adecd70c42ac293605dd961}
+      \strng{bibnamehash}{19774e622adecd70c42ac293605dd961}
+      \strng{authorbibnamehash}{19774e622adecd70c42ac293605dd961}
+      \strng{authornamehash}{19774e622adecd70c42ac293605dd961}
+      \strng{authorfullhash}{19774e622adecd70c42ac293605dd961}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is von Mises Stress?}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.simscale.com/docs/content/simwiki/fea/what-is-von-mises-stress.html
+      \endverb
+      \verb{url}
+      \verb https://www.simscale.com/docs/content/simwiki/fea/what-is-von-mises-stress.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

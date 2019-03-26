@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{MM}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5d5687930552bbca3338559d9260d0ac}{%
+           family={Beer},
+           familyi={B\bibinitperiod},
+           given={F.P.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{5d5687930552bbca3338559d9260d0ac}
+      \strng{fullhash}{5d5687930552bbca3338559d9260d0ac}
+      \strng{bibnamehash}{5d5687930552bbca3338559d9260d0ac}
+      \strng{authorbibnamehash}{5d5687930552bbca3338559d9260d0ac}
+      \strng{authornamehash}{5d5687930552bbca3338559d9260d0ac}
+      \strng{authorfullhash}{5d5687930552bbca3338559d9260d0ac}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{5ta. edición}
+      \field{title}{Mecánica de Materiales}
+      \field{year}{2009}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

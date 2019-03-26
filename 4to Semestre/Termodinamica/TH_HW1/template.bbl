@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{cengel}{book}{}
+      \name{author}{1}{}{%
+        {{hash=c92cec56179265c61adfa033855513c1}{%
+           family={Çengel},
+           familyi={Ç\bibinitperiod},
+           given={Yunus\bibnamedelima A.},
+           giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Mc-Graw Hill}%
+      }
+      \strng{namehash}{c92cec56179265c61adfa033855513c1}
+      \strng{fullhash}{c92cec56179265c61adfa033855513c1}
+      \strng{bibnamehash}{c92cec56179265c61adfa033855513c1}
+      \strng{authorbibnamehash}{c92cec56179265c61adfa033855513c1}
+      \strng{authornamehash}{c92cec56179265c61adfa033855513c1}
+      \strng{authorfullhash}{c92cec56179265c61adfa033855513c1}
+      \field{sortinit}{Ç}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{2 Edición}
+      \field{title}{Introduction to Thermodynamics and Heat Transfer}
+      \field{year}{2008}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

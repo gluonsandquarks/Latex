@@ -1,0 +1,118 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{lozano97}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0dc05bf21a94a1ee428665bd226ed2db}{%
+           family={Lozano\bibnamedelima Serrano},
+           familyi={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={M.\bibnamedelimi A.},
+           giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad de Zaragoza}%
+      }
+      \strng{namehash}{0dc05bf21a94a1ee428665bd226ed2db}
+      \strng{fullhash}{0dc05bf21a94a1ee428665bd226ed2db}
+      \strng{bibnamehash}{0dc05bf21a94a1ee428665bd226ed2db}
+      \strng{authorbibnamehash}{0dc05bf21a94a1ee428665bd226ed2db}
+      \strng{authornamehash}{0dc05bf21a94a1ee428665bd226ed2db}
+      \strng{authorfullhash}{0dc05bf21a94a1ee428665bd226ed2db}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aplicaciones Termoeconómicas del Método Exergético}
+      \field{year}{1997}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/profile/Miguel_Lozano/publication/258319007_Aplicaciones_termoeconomicas_del_metodo_exergetico/links/02e7e527cbdc103a3d000000/Aplicaciones-termoeconomicas-del-metodo-exergetico.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/profile/Miguel_Lozano/publication/258319007_Aplicaciones_termoeconomicas_del_metodo_exergetico/links/02e7e527cbdc103a3d000000/Aplicaciones-termoeconomicas-del-metodo-exergetico.pdf
+      \endverb
+    \endentry
+    \entry{montes09}{book}{}
+      \name{author}{2}{}{%
+        {{hash=4560d9660469b695934d9bfd08b36540}{%
+           family={Montes\bibnamedelima Villalón},
+           familyi={M\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={J.\bibnamedelimi M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=71a0735a9d0dce08ff2b311de32b524b}{%
+           family={García\bibnamedelima Torrent},
+           familyi={G\bibinitperiod\bibinitdelim T\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ediciones Peninsular}%
+      }
+      \strng{namehash}{780284951042e6e83611bc897c937888}
+      \strng{fullhash}{780284951042e6e83611bc897c937888}
+      \strng{bibnamehash}{780284951042e6e83611bc897c937888}
+      \strng{authorbibnamehash}{780284951042e6e83611bc897c937888}
+      \strng{authornamehash}{780284951042e6e83611bc897c937888}
+      \strng{authorfullhash}{780284951042e6e83611bc897c937888}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{Primera edición}
+      \field{title}{Termoeconomía y optimización energética}
+      \field{year}{2009}
+    \endentry
+    \entry{silva15}{online}{}
+      \name{author}{1}{}{%
+        {{hash=35f83417d5e37a3ab78dfb455c533bd3}{%
+           family={Silva\bibnamedelima Larrotta},
+           familyi={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Nacional de Colombia}%
+      }
+      \strng{namehash}{35f83417d5e37a3ab78dfb455c533bd3}
+      \strng{fullhash}{35f83417d5e37a3ab78dfb455c533bd3}
+      \strng{bibnamehash}{35f83417d5e37a3ab78dfb455c533bd3}
+      \strng{authorbibnamehash}{35f83417d5e37a3ab78dfb455c533bd3}
+      \strng{authornamehash}{35f83417d5e37a3ab78dfb455c533bd3}
+      \strng{authorfullhash}{35f83417d5e37a3ab78dfb455c533bd3}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{La termoeconomía como alternativa para mejorar la competitividad industrial}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://bdigital.unal.edu.co/46673/1/08941073.2015.pdf
+      \endverb
+      \verb{url}
+      \verb http://bdigital.unal.edu.co/46673/1/08941073.2015.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

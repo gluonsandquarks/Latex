@@ -1,0 +1,101 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{inthamoussou11}{book}{}
+      \name{author}{1}{}{%
+        {{hash=81c5622bda4385512fe3e4b3b30e41d3}{%
+           family={Inthaoussou},
+           familyi={I\bibinitperiod},
+           given={F.\bibnamedelimi A.},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Nacional de La Plata}%
+      }
+      \strng{namehash}{81c5622bda4385512fe3e4b3b30e41d3}
+      \strng{fullhash}{81c5622bda4385512fe3e4b3b30e41d3}
+      \strng{bibnamehash}{81c5622bda4385512fe3e4b3b30e41d3}
+      \strng{authorbibnamehash}{81c5622bda4385512fe3e4b3b30e41d3}
+      \strng{authornamehash}{81c5622bda4385512fe3e4b3b30e41d3}
+      \strng{authorfullhash}{81c5622bda4385512fe3e4b3b30e41d3}
+      \field{sortinit}{I}
+      \field{sortinithash}{320bc8fe8101b9376f9f21cd507de0e8}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Nociones de control robusto}
+      \field{year}{2011}
+    \endentry
+    \entry{mantz03}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d1cc5cad63d431a2514bd6498a98a73c}{%
+           family={Mantz},
+           familyi={M\bibinitperiod},
+           given={R.\bibnamedelimi J.},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Nacional de La Plata}%
+      }
+      \strng{namehash}{d1cc5cad63d431a2514bd6498a98a73c}
+      \strng{fullhash}{d1cc5cad63d431a2514bd6498a98a73c}
+      \strng{bibnamehash}{d1cc5cad63d431a2514bd6498a98a73c}
+      \strng{authorbibnamehash}{d1cc5cad63d431a2514bd6498a98a73c}
+      \strng{authornamehash}{d1cc5cad63d431a2514bd6498a98a73c}
+      \strng{authorfullhash}{d1cc5cad63d431a2514bd6498a98a73c}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Observadores de estados}
+      \field{year}{2003}
+    \endentry
+    \entry{zill09}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4bd56a936e240c2397d4599e070f4334}{%
+           family={Zill},
+           familyi={Z\bibinitperiod},
+           given={D.\bibnamedelimi G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Brooks \& Cole / Cengage Learning}%
+      }
+      \strng{namehash}{4bd56a936e240c2397d4599e070f4334}
+      \strng{fullhash}{4bd56a936e240c2397d4599e070f4334}
+      \strng{bibnamehash}{4bd56a936e240c2397d4599e070f4334}
+      \strng{authorbibnamehash}{4bd56a936e240c2397d4599e070f4334}
+      \strng{authornamehash}{4bd56a936e240c2397d4599e070f4334}
+      \strng{authorfullhash}{4bd56a936e240c2397d4599e070f4334}
+      \field{sortinit}{Z}
+      \field{sortinithash}{156173bd08b075d7295bc3e0f4735a04}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{Novena edición}
+      \field{title}{Ecuaciones diferenciales con aplicaciones de modelado}
+      \field{year}{2009}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

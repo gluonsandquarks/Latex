@@ -1,0 +1,68 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\bibliography{referencias}
+
+% Titulo, autores, fecha.
+\title{Definiciones Básicas (Tarea \#1)}
+\author{Carlos Vásquez 1155057}
+\date{28 de Enero, 2019}
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\begin{enumerate}
+    \item Esfuerzo normal ($\sigma$): la fuerza interna que experimenta una varilla y es normal al plano de una sección transversal de la misma se describe como esfuerzo normal. La fórmula siguiente describe el esfuerzo normal en un elemento bajo carga axial\autocite{MM}:
+    \begin{align}
+        \sigma = \frac{P}{A}
+    \end{align}
+    
+    \item Deformación unitaria ($\epsilon$): la razón de la deformación por la longitud que sufre una vcarilla es igual a
+    \begin{align}
+        \epsilon = \frac{\delta}{L}
+    \end{align}
+    
+    donde $\delta$ es la deformación total (que es posible obtenerse de un diagrama carga/deforma-ción) y \emph{L} es la longitud de la varilla. Con esta razón introducimos el concepto de deformación unitaria, el cual nos permite predecir la deformación de un mismo material sin tener que volver a tomar en cuenta cambios en la longitud, sección transversal, etcétera.\autocite{MM}
+    
+    \item Fluencia ($\sigma_4$): la fluencia o cedencia es la deformación irrecuperable de la probeta (muestra o pieza construida de un material determinado), a partir de la cual sólo se recuperará la parte de su deformación correspondiente a la deformación elástica, quedando una deformación irreversible. Este fenómeno se sitúa justo encima del límite elástico, y se produce un alargamiento muy rápido sin que varíe la tensión aplicada.
+    
+    \item Módulo de elasticidad (E): el coeficiente \emph{E} en la ley de Hooke se denomina \emph{módulo de elasticidad} del material involucrado o, también, \emph{módulo de Young}. Como la deformación $\epsilon$ es una cantidad adimensional, el módulo \emph{E} se expresa en las mismas unidades que el esfuerzo $\sigma$, es decir, en pascales o sus equivalentes.\autocite{MM}
+    
+    \item Módulo de elasticidad transversal (G): El módulo de cizalladura, también llamado módulo de elasticidad transversal, es una constante elástica que caracteriza el cambio de forma que experimenta un material elástico (lineal e isótropo) cuando se aplican esfuerzos cortantes. Para un material elástico lineal e isótropo, el módulo de elasticidad transversal tiene el mismo valor para todas las direcciones del espacio. En materiales anisótropos se pueden definir varios módulos de de elasticidad transversal.\autocite{EsAc}
+    
+    \item Ley de Hooke: establece que el esfuerzo $\sigma$ es directamente proporcional a la deformación $\epsilon$, y puede escribirse como\autocite{MM}:
+    \begin{align}
+        \sigma = E\epsilon
+    \end{align}
+    
+    \item Límite de proporcionalidad: El mayor esfuerzo en el que el esfuerzo es directamente proporcional a la deformación. Es el mayor esfuerzo en el que la curva en un diagrama carga-deformación es una línea recta. El límite proporcional es igual al límite elástico para muchos metales.\autocite{Ins} 
+    
+    \item Relación de Poisson: se define como:
+    \begin{align}
+        \nu = -\frac{\epsilon_y}{\epsilon_x} = -\frac{\epsilon_z}{\epsilon_x}
+    \end{align}
+    $\epsilon_y$ y $\epsilon_z$ se conocen como deformaciones laterales. En todos los materiales de ingeniería, la elongación que produce un fuerza axial en la dirección de la fuerza se acompaña de una contracción en cualquier dirección transversal.\autocite{MM}
+    
+    \item Carga axial: en teoría de vigas y mecánica de materiales se dice que una viga o varilla se encuentra bajo \emph{carga axial} cuando las fuerzas que actúan sobre ésta son aplicadas a lo largo del eje de la varilla.\autocite{MM}
+    
+    \item Esfuerzo cortante: al aplicar fuerzas transversales a un elemento , si se efectúa un corte entre los puntos de aplicación de las dos fuerzas, obtenemos una porción que experimenta la aplicación de una fuerza.Se concluuye que deben existir fuerzas internas en el plano de la sección, y que su resultante es igual a la fuerza omitida por el seccionamiento del elemento.\autocite{MM}
+    
+    \item Esfuerzo de ruptura: Se denomina tensión de rotura a la máxima tensión que un material puede soportar bajo tensión antes de que su sección transversal se contraiga de manera significativa.
+\end{enumerate}
+%%%% Bib
+\renewcommand\refname{Referencias}
+\printbibliography
+\end{document}

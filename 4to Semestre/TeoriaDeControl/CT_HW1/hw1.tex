@@ -1,0 +1,68 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Tarea\#1: Definiciones}
+\author{Carlos Vásquez 1155057}
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\begin{itemize}
+	\item ¿Para qué sirven los \textit{observadores de estado}?
+		
+		La observabilidad se ocupa del problema de determinar el estado de un sistema dinámico a partir de observaciones de los vectores de salida y de control en un número finito de periodos de muestreo.
+
+		Los observadores de estado son sistemas dinámicos cuyos estados convergen a los del sistema observado. Dependiendo del número de estados observados, el observador es de orden completo o reducido\autocite{mantz03}
+
+		Dicho de otra manera, el observador de estado estima el estado del sistema a partir de la dináica de su entrada y su salida, dado que aquello que se necesita medir no es directamente observable, sino que está oculto (no medible).
+
+	\item ¿A qué se le llama controladores robustos?
+
+Al diseñar el modelo de un sistema dinámico se busca un modelo que represente al sistema de la manera más sencilla posible. Dado este objetivo, es común que el modelo que se haya obtenido tenga errores de modelado ya que no describe el sistema a total detalle. Así, surge la pregunta de si el controlador diseñado para el modelo obtenido funcionará satisfactoriamente para la planta real.
+
+		Para resolver esta duda, se ha desarrollado un método, el cual consiste en aproximar el modelo por uno lineal de coeficientes constantes, asumiendo que se incurrirá en un error de modelado. Este error es considerado como incertidumbre de modelo frente a la planta física real, y utiliza esta incertidumbre para diseñar los controladores del sistema. A éstos se les denomina controladores robustos ya que toman en cuenta estas incertidumbres.\autocite{inthamoussou11}
+	\item ¿Qué son los puntos de equilibrio?
+
+Se definen como punto de equilibrio de un sistema como aquel en el que todas sus variables se encuentran establizadas en unos valores constantes, es decir, aquel en el que todas las derivadas de las variables son nulas. Dichos valores de las variables definen el punto de equilibrio.
+
+	\item Modelo dinámico de un sistema masa-resorte-amortiguador:
+
+		En el estudio de la mecánica, las fuerzas de amortiguamiento que actúan sobre un cuerpo se consideran proporcionales a una potencia de la velocidad instantánea. En particular, en el análisis posterior se supone que esta fuerza está dada por un múltiplo constante de \textit{dx/dt}. Cuando ninguna otra fuerza actuúa en el sistema, se tiene de la segunda ley de Newton que
+		\begin{align}
+			m \frac{d^2 x}{dt^2} = -kx - \beta \frac{dx}{dt}
+		\end{align}
+		donde $\beta$ es una \textit{constante de amortiguamiento} positiva y el signo negativo es una consecuencia del hecho de que la fuerza de amortiguamiento actúa en una dirección opuesta al movimiento. Si dividimos la ecuación anterior entre la masa \textit{m}, se encuentra que la ecuación diferencial del \textbf{movimiento libre amortiguado} es
+		\begin{align}
+			\frac{d^2 x}{dt^2} + 2 \lambda \frac{dx}{dt} + \omega ^2 x = 0
+		\end{align}
+		donde
+		\begin{align*}
+		2\lambda = \frac{\beta}{m} , \omega ^2 = \frac{k}{m}
+		\end{align*}
+El símbolo $2\lambda$ se usa sólo por conveniencia algebraica, porque la ecuación auxiliar es $m^2 + 2\lambda m + \omega ^2 = 0$ y las raíces correspondientes son entonces
+		\begin{align*}
+m_1 = -\lambda + \sqrt{\lambda ^2 - \omega ^2}, m_2 = -\lambda - \sqrt{\lambda ^2 - \omega ^2}
+		\end{align*}
+
+El valor del radical nos permitirá asignar distintos casos para el análisis del sistema. En caso de que la expresión dentro del radical sea mayor a cero, se dice que el sistema estará \textbf{sobreamortiguado}. Por otro lado, cuando el radical sea identico a cero, se dice que el sistema estará \textbf{críticamente amortiguado}. Y en el caso en que el radical sea menor a cero, el sistema se encontrará \textbf{subamortiguado}. \autocite{zill09}	
+\end{itemize}
+%%%%%  Bib
+\renewcommand\refname{Referencias}
+\printbibliography
+\end{document}
