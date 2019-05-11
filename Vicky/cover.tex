@@ -1,0 +1,95 @@
+\documentclass[12pt, letterpaper]{article}
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage{mathpazo} % Palatino font
+
+\usepackage{graphicx}
+\usepackage{float}
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\vspace*{-3cm}
+	\hspace*{-2.5cm}
+	\makebox[\dimexpr\textwidth+2cm][l]{\includegraphics[height=0.3\textwidth]{logo.png}}
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	\center % Centre everything on the page
+	
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	
+	\textsc{\Large Universidad Autónoma de Baja California}\\[1.5cm] % Main heading such as the name of your university/college
+	
+	\textsc{\Large Facultad de Medicina}\\[0.5cm] % Major heading such as course name
+	
+	\textsc{\large Desarrollo Humano}\\[0.5cm] % Minor heading such as course title
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries Sobre "El hombre en busca de sentido"\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+	%\begin{minipage}{0.4\textwidth}
+	%	\begin{flushleft}
+			\large
+			\textsc{Alumno}\\
+			\large{Rábago Carranza Andrea Victoria} % Your name
+	%	\end{flushleft}
+	%\end{minipage}
+%	~
+%	\begin{minipage}{0.4\textwidth}
+%		\begin{flushright}
+%			\large
+%			\textit{Profesora}\\
+%			\textsc{} % \textsc{Becker} % Supervisor's name
+%		\end{flushright}
+%	\end{minipage}
+	
+	% If you don't want a supervisor, uncomment the two lines below and comment the code above
+	%{\large\textit{Author}}\\
+	%John \textsc{Smith} % Your name
+	
+	%------------------------------------------------
+	%	Date
+	%------------------------------------------------
+	
+	\vfill
+	{\large Grupo 331-2}
+
+	{\large Matrícula: 1155268}
+	\vfill
+	\vfill % Position the date 3/4 down the remaining page
+	
+	{\large Mayo 9, 2019} % Date, change the \today to a set date if you want to be precise
+	
+	%------------------------------------------------
+	%	Logo
+	%------------------------------------------------
+	
+	%\vfill\vfill
+	%\includegraphics[width=0.2\textwidth]{placeholder.jpg}\\[1cm] % Include a department/university logo - this will require the graphicx package
+	 
+	%----------------------------------------------------------------------------------------
+	
+	\vfill % Push the date up 1/4 of the remaining page
+}	
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

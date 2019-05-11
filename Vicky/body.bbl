@@ -1,0 +1,51 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{frankl91}{book}{}
+      \name{author}{1}{}{%
+        {{hash=572c41395213e8138c6dd33522d25751}{%
+           family={Frankl},
+           familyi={F\bibinitperiod},
+           given={V.\bibnamedelimi E.},
+           giveni={V\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {España, Editorial Herder S.A.}%
+      }
+      \strng{namehash}{572c41395213e8138c6dd33522d25751}
+      \strng{fullhash}{572c41395213e8138c6dd33522d25751}
+      \strng{bibnamehash}{572c41395213e8138c6dd33522d25751}
+      \strng{authorbibnamehash}{572c41395213e8138c6dd33522d25751}
+      \strng{authornamehash}{572c41395213e8138c6dd33522d25751}
+      \strng{authorfullhash}{572c41395213e8138c6dd33522d25751}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{Duodécima edición}
+      \field{title}{El Hombre en Busca de Sentido}
+      \field{year}{1991}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
