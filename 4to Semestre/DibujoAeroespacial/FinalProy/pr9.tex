@@ -1,0 +1,49 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Proyecto Final - Dibujo Aeroespacial}
+\author{Carlos Vásquez \and 1155057}
+\date{May 9, 2019}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Carlos Vásquez}
+\lhead{Rueda de Carro --- Proyecto \#6}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\section*{Introducción}
+
+El proyecto en cuestión expondrá los planos realizados sobre el modelo llamado "Rueda de Carro". Una rueda de carro se utiliza muy comúnmente para movilizar objetos, dependiendo del mecanísmo que lo lleve. Ya sea un carro de supermercado o carritos industriales que operan en fábricas, las ruedas de carro son esenciales para lograr movilizar objetos de un lado a otro.
+
+En este caso, la rueda de carro que se realizó fue bastante estándar. Primero se realizaron las partes esenciales que son la rueda de carro como tal, el eje que lleva ésta donde se ensamblarán las demás piezas, un anillo separador y un anillo de engrase, el cual nos permitirá lubricar las partes mecánicas y los rodillos rígidos de bolas dentro del mecanismo.
+
+Además de estas partes hechas dentro de CATIA, también se utilizaron piezas estandarizadas, específicamente hablando se obtuvo del catálogo de CATIA la arandela utilizada, los tornillos de cabeza hexagonal y la tuerca hexagonal. La arandela fue modificada para ajustarle al radio del eje, ya que éste tiene un diámetro M33. Por otro lado, otro objeto que se obtuvo de una librería en línea (\textit{skf.com}) fueron los rodillos rígidos de bolas. Las especificacione de éstos y de las demás partes obtenidas de catálogos se encuentran en el BOM.
+
+Una vez realizadas estas piezas se procedió a llevar acabo el ensamble, el cual se acotó mediante las restricciones y relaciones entre las piezas mismas. Posteriormente se realizó una escena para poder montar la vista explotada del ensamble y así eliminar la ambigüedad que conlleva el realizar planos de figuras tridimensionales. Finalmente estas vistas y los distintas piezas se llevaron a planos para documentar sus medidas y generar los documentos adecuados para la reproducción de estas piezas.
+
+A continuación se muestran los planos, los cuales contienen la vista de explotado de la pieza, una vista de corte de sección del ensamble completo, y las especificaciones de las piezas principales que conforman la rueda de carro.
+%%%%%  Bib
+\renewcommand\refname{Referencias}
+\printbibliography
+\end{document}
