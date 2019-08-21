@@ -1,0 +1,118 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+\setlength\parindent{0pt}
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Tarea \#1: Densidad, Peso Específico y Gravedad Específica}
+\author{Carlos Vásquez \and 1155057}
+\date{Agosto 19, 2019}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Carlos Vásquez}
+\lhead{Tarea \#1 --- Dinámica de Fluidos}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+
+\textbf{Problema 1.81M} La gravedad específica del benceno es de 0.876. Calcule su peso específico y su densidad, en unidades del SI. \\
+\textbf{Datos} \hspace{5cm} \textbf{Fórmulas} \\
+$SG_{C_6H_6} = 0.876$ \hspace{3.3cm} $SG = \frac{\rho}{\rho_{H_2O}} = \frac{\gamma}{\gamma_{H_2O}}$\\
+$\rho_{H_2O\ @\ 4\ ºC} = 1000 \frac{kg}{m^3}$\\
+$\gamma_{H_2O\ @\ 4\ ºC} = 9.81 \frac{kN}{m^3}$
+
+
+\textbf{Solución} \\
+Dada la fórmula de la gravedad específica, podemos obtener el peso específico y la densidad del benceno si asumimos que la temperatura del agua de referencia se encuentra a 4 ºC.
+
+\begin{equation*}
+	\begin{split}
+		SG &= \frac{\rho_{C_6H_6}}{\rho_{H_2O\ @\ 4\ ºC}}\\
+		0.876 = \frac{\rho_{C_6H_6}}{1000\frac{kg}{m^3}} \Rightarrow \rho_{C_6H_6} &= (0.876)(1000 \frac{kg}{m^3})
+	\end{split}
+\end{equation*}
+
+\begin{equation}
+	\boxed{
+		\rho_{C_6H_6} = 876 \frac{kg}{m^3}}
+\end{equation}
+
+\begin{equation*}
+	\begin{split}
+		\gamma_{C_6H_6} &= (SG)(\gamma_{H_2O\ @\ 4\ ºC})\\
+		\gamma_{C_6H_6} &= (0.876)(9.81 \frac{kN}{m^3})
+	\end{split}
+\end{equation*}
+
+\begin{equation}
+	\boxed{
+		\gamma_{C_6H_6} = 8.59356 \frac{kN}{m^3} \approx 8.6 \frac{kN}{m^3}}
+\end{equation}
+
+
+\textbf{Problema 1.83M} Cierto aceite medio de lubricación tiene un peso específico de 8.860 $kN/m^3$ a 5 ºC, y 8.483 $kN/m^3$ a 50 ºC. Calcule su gravedad específica en cada temperatura. \\
+\textbf{Datos} \hspace{5cm} \textbf{Fórmulas} \\
+$\gamma_{aceite\ @\ 5\ ºC} = 8.860 \frac{kN}{m^3}$ \hspace{1.8cm} $SG = \frac{\gamma}{\gamma_{H_2O}}$\\
+$\gamma_{aceite\ @\ 50\ ºC} = 8.483 \frac{kN}{m^3}$\\
+$\gamma_{H_2O\ @\ 5\ ºC} = 9.81 \frac{kN}{m^3}$\\
+$\gamma_{H_2O\ @\ 50\ ºC} = 9.69 \frac{kN}{m^3}$
+
+
+\textbf{Solución} \\
+Con la fórmula de la gravedad específica y los datos proporcionados en el apéndice A del libro es posible calcular la gravedad específica a las distintas temperaturas requeridas.
+\begin{equation*}
+	\begin{split}
+		SG_{@\ 5\ ºC} &= \frac{\gamma_{aceite\ @\ 5\ ºC}}{\gamma_{H_2O\ @\ 5\ ºC}}\\
+		&= \frac{8.860 \frac{kN}{m^3}}{9.81 \frac{kN}{m^3}}
+	\end{split}
+\end{equation*}
+
+\begin{equation}
+	\boxed{SG_{@\ 5\ ºC} \approx 0.9032}
+\end{equation}
+
+\begin{equation*}
+	\begin{split}
+		SG_{@\ 50\ ºC} &= \frac{\gamma_{aceite\ @\ 50\ ºC}}{\gamma_{H_2O\ @\ 5\ ºC}}\\
+		&= \frac{8.483 \frac{kN}{m^3}}{9.69 \frac{kN}{m^3}}
+	\end{split}
+\end{equation*}
+
+\begin{equation}
+	\boxed{SG_{@\ 50\ ºC} \approx 0.8754}
+\end{equation}
+
+\textbf{Problema 1.85M} Una lata ciíndrica de 150 mm de diámetro contiene 100 mm de aceite combustible. El aceite tiene una masa de  1.56 kg. Calcule su densidad, peso específico y gravedad específica. \\
+\textbf{Datos} \hspace{5cm} \textbf{Fórmulas} \\
+$\varnothing_{lata} = 150 mm$ \hspace{3.4cm} $V = h\pi r^2$\\
+$h = 100 mm$ \hspace{4cm} $\rho = \frac{m}{V}$\\
+$m = 1.56 kg$ \hspace{4cm} $\gamma = \frac{W}{V}$\\
+$\rho_{H_2O\ @\ 4\ ºC} = 1000 \frac{kg}{m^3} $ \hspace{2cm} $SG = \frac{\rho}{\rho_{H_2O}}$\\
+$g = 9.81 \frac{m}{s^2}$ \hspace{4cm} $W = mg$
+
+\textbf{Solución} \\
+
+Fuuuuuuuckkk this imma make it handwritten. AYeeeeeeeeeeeeeeeeee
+%%%%%  Bib
+\renewcommand\refname{Referencias}
+\printbibliography
+\end{document}
