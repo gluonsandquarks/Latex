@@ -2728,6 +2728,16 @@
     <bcf:datasource type="file" datatype="bibtex">referencias.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
+    <bcf:citekey order="1">skybrary16</bcf:citekey>
+    <bcf:citekey order="2">nasa00</bcf:citekey>
+    <bcf:citekey order="3">nasa01</bcf:citekey>
+    <bcf:citekey order="4">faa17</bcf:citekey>
+    <bcf:citekey order="5">britannica00</bcf:citekey>
+    <bcf:citekey order="6">nasa02</bcf:citekey>
+    <bcf:citekey order="7">pbs00</bcf:citekey>
+    <bcf:citekey order="8">wt08</bcf:citekey>
+    <bcf:citekey order="9">skybrary17</bcf:citekey>
+    <bcf:citekey order="10">pbs01</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="cms">

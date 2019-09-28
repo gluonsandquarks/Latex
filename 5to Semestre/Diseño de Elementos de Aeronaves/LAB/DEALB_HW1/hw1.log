@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.3)  20 AUG 2019 12:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.2.3)  21 AUG 2019 01:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -996,12 +996,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout4 = `hw1.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'hw1.bbl' not found.
-No file hw1.bbl.
+Package biblatex Info: ... file 'hw1.bbl' found.
+(./hw1.bbl)
 Package biblatex Info: Reference section=0 on input line 34.
 Package biblatex Info: Reference segment=0 on input line 34.
 LaTeX Font Info:    Try loading font information for U+msa on input line 36.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 36.
@@ -1009,48 +1009,131 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 43.
 
-LaTeX Warning: Empty bibliography on input line 54.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
-[1
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<1.png, id=6, 471.7625pt x 302.12875pt>
+File: 1.png Graphic file (type png)
+<use 1.png>
+Package pdftex.def Info: 1.png  used on input line 49.
+(pdftex.def)             Requested size: 234.8775pt x 150.42319pt.
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<2.png, id=28, 961.5925pt x 572.1375pt>
+File: 2.png Graphic file (type png)
+<use 2.png>
+Package pdftex.def Info: 2.png  used on input line 60.
+(pdftex.def)             Requested size: 234.8775pt x 139.74277pt.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
+[2 <./1.png>]
+<3.png, id=44, 805.0075pt x 409.53pt>
+File: 3.png Graphic file (type png)
+<use 3.png>
+Package pdftex.def Info: 3.png  used on input line 74.
+(pdftex.def)             Requested size: 375.80544pt x 191.17934pt.
+ [3 <./2.png>]
+<4.png, id=59, 997.7275pt x 645.41125pt>
+File: 4.png Graphic file (type png)
+<use 4.png>
+Package pdftex.def Info: 4.png  used on input line 88.
+(pdftex.def)             Requested size: 328.82707pt x 212.71062pt.
+ [4 <./3.png>]
+<5.png, id=69, 731.73375pt x 493.845pt>
+File: 5.png Graphic file (type png)
+<use 5.png>
+Package pdftex.def Info: 5.png  used on input line 100.
+(pdftex.def)             Requested size: 234.8775pt x 158.51588pt.
+ [5 <./4.png>]
+<6.png, id=82, 423.5825pt x 253.94875pt>
+File: 6.png Graphic file (type png)
+<use 6.png>
+Package pdftex.def Info: 6.png  used on input line 107.
+(pdftex.def)             Requested size: 281.85587pt x 168.98616pt.
+ [6 <./5.png> <./6.png>]
+<7.png, id=93, 1060.96375pt x 631.35875pt>
+File: 7.png Graphic file (type png)
+<use 7.png>
+Package pdftex.def Info: 7.png  used on input line 115.
+(pdftex.def)             Requested size: 281.85587pt x 167.72351pt.
+<8.png, id=96, 587.19376pt x 391.4625pt>
+File: 8.png Graphic file (type png)
+<use 8.png>
+Package pdftex.def Info: 8.png  used on input line 129.
+(pdftex.def)             Requested size: 281.85587pt x 187.89986pt.
+[7 <./7.png>]
+<9.png, id=111, 565.11125pt x 303.1325pt>
+File: 9.png Graphic file (type png)
+<use 9.png>
+Package pdftex.def Info: 9.png  used on input line 138.
+(pdftex.def)             Requested size: 281.85587pt x 151.19121pt.
+ [8 <./8.png> <./9.png>]
+<10.png, id=122, 961.5925pt x 645.41125pt>
+File: 10.png Graphic file (type png)
+<use 10.png>
+Package pdftex.def Info: 10.png  used on input line 154.
+(pdftex.def)             Requested size: 281.85587pt x 189.18335pt.
+ [9]
+<11.png, id=139, 579.16376pt x 349.305pt>
+File: 11.png Graphic file (type png)
+<use 11.png>
+Package pdftex.def Info: 11.png  used on input line 167.
+(pdftex.def)             Requested size: 281.85587pt x 169.99368pt.
+ [10 <./10.png>]
+<12.png, id=154, 963.6pt x 637.38126pt>
+File: 12.png Graphic file (type png)
+<use 12.png>
+Package pdftex.def Info: 12.png  used on input line 175.
+(pdftex.def)             Requested size: 281.85587pt x 186.43083pt.
+
+Overfull \hbox (8.40916pt too wide) in paragraph at lines 181--181
+[][]\T1/cmr/m/n/12 Administration, Fed-eral Avi-a-tion. ^^P  Air-plane Fly-ing 
+Hand-book --- Tran-si-tion to Turbopropeller-
+ []
+
+[11 <./11.png> <./12.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 181.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 181.
  (./hw1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 181.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 181.
 Package rerunfilecheck Info: File `hw1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package logreq Info: Writing requests to 'hw1.run.xml'.
 \openout1 = `hw1.run.xml'.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 181.
  ) 
 Here is how much of TeX's memory you used:
- 17001 strings out of 492982
- 283687 string characters out of 6134897
- 940752 words of memory out of 5000000
- 20393 multiletter control sequences out of 15000+600000
- 11161 words of font info for 32 fonts, out of 8000000 for 9000
+ 17445 strings out of 492982
+ 291305 string characters out of 6134897
+ 951255 words of memory out of 5000000
+ 20727 multiletter control sequences out of 15000+600000
+ 19766 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,10n,43p,958b,2787s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,10n,58p,958b,2787s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/
-fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/c
-m-super/sfbx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb
-></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb></usr/share/texmf/f
-onts/type1/public/cm-super/sfrm2074.pfb>
-Output written on hw1.pdf (2 pages, 71322 bytes).
+fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1728.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1440.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfti1200.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sftt1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on hw1.pdf (12 pages, 8036301 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 10 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 217 compressed objects within 3 object streams
+ 87 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

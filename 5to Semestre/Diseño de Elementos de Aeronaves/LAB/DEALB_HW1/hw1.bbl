@@ -1,0 +1,295 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{faa17}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3f5ef952222469f9f33d60512aeed962}{%
+           family={Administration},
+           familyi={A\bibinitperiod},
+           given={Federal\bibnamedelima Aviation},
+           giveni={F\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f5ef952222469f9f33d60512aeed962}
+      \strng{fullhash}{3f5ef952222469f9f33d60512aeed962}
+      \strng{bibnamehash}{3f5ef952222469f9f33d60512aeed962}
+      \strng{authorbibnamehash}{3f5ef952222469f9f33d60512aeed962}
+      \strng{authornamehash}{3f5ef952222469f9f33d60512aeed962}
+      \strng{authorfullhash}{3f5ef952222469f9f33d60512aeed962}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Airplane Flying Handbook --- Transition to Turbopropeller-Powered Airplanes}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook/media/16_afh_ch14.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.faa.gov/regulations_policies/handbooks_manuals/aviation/airplane_handbook/media/16_afh_ch14.pdf
+      \endverb
+    \endentry
+    \entry{pbs01}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b3b24c90cdd6e0e7643f42487e18e118}{%
+           family={Aerospace},
+           familyi={A\bibinitperiod},
+           given={PBS},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{fullhash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{bibnamehash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{authorbibnamehash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{authornamehash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{authorfullhash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Auxiliary Power Units}
+      \verb{urlraw}
+      \verb https://www.pbsaerospace.com/auxilary-power-units
+      \endverb
+      \verb{url}
+      \verb https://www.pbsaerospace.com/auxilary-power-units
+      \endverb
+    \endentry
+    \entry{pbs00}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b3b24c90cdd6e0e7643f42487e18e118}{%
+           family={Aerospace},
+           familyi={A\bibinitperiod},
+           given={PBS},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{fullhash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{bibnamehash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{authorbibnamehash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{authornamehash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \strng{authorfullhash}{b3b24c90cdd6e0e7643f42487e18e118}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turboshaft Engines}
+      \verb{urlraw}
+      \verb https://www.pbsaerospace.com/engines/turboshaft-engines
+      \endverb
+      \verb{url}
+      \verb https://www.pbsaerospace.com/engines/turboshaft-engines
+      \endverb
+    \endentry
+    \entry{britannica00}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2b0715fdc72693cb0b01de207f03a8ee}{%
+           family={Britannica},
+           familyi={B\bibinitperiod},
+           given={Enciclopedia},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{2b0715fdc72693cb0b01de207f03a8ee}
+      \strng{fullhash}{2b0715fdc72693cb0b01de207f03a8ee}
+      \strng{bibnamehash}{2b0715fdc72693cb0b01de207f03a8ee}
+      \strng{authorbibnamehash}{2b0715fdc72693cb0b01de207f03a8ee}
+      \strng{authornamehash}{2b0715fdc72693cb0b01de207f03a8ee}
+      \strng{authorfullhash}{2b0715fdc72693cb0b01de207f03a8ee}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turbojet}
+      \verb{urlraw}
+      \verb https://www.britannica.com/technology/turbojet
+      \endverb
+      \verb{url}
+      \verb https://www.britannica.com/technology/turbojet
+      \endverb
+    \endentry
+    \entry{nasa00}{online}{}
+      \name{author}{1}{}{%
+        {{hash=88f68ab70e26fe1bb7df99887157434d}{%
+           family={Center},
+           familyi={C\bibinitperiod},
+           given={NASA's\bibnamedelimb Glenn\bibnamedelima Research},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{fullhash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{bibnamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authorbibnamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authornamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authorfullhash}{88f68ab70e26fe1bb7df99887157434d}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turbofan Engine}
+      \verb{urlraw}
+      \verb https://www.grc.nasa.gov/www/k-12/airplane/aturbf.html
+      \endverb
+      \verb{url}
+      \verb https://www.grc.nasa.gov/www/k-12/airplane/aturbf.html
+      \endverb
+    \endentry
+    \entry{nasa02}{online}{}
+      \name{author}{1}{}{%
+        {{hash=88f68ab70e26fe1bb7df99887157434d}{%
+           family={Center},
+           familyi={C\bibinitperiod},
+           given={NASA's\bibnamedelimb Glenn\bibnamedelima Research},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{fullhash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{bibnamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authorbibnamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authornamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authorfullhash}{88f68ab70e26fe1bb7df99887157434d}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turbojet Engine}
+      \verb{urlraw}
+      \verb https://www.grc.nasa.gov/WWW/k-12/airplane/aturbj.html
+      \endverb
+      \verb{url}
+      \verb https://www.grc.nasa.gov/WWW/k-12/airplane/aturbj.html
+      \endverb
+    \endentry
+    \entry{nasa01}{online}{}
+      \name{author}{1}{}{%
+        {{hash=88f68ab70e26fe1bb7df99887157434d}{%
+           family={Center},
+           familyi={C\bibinitperiod},
+           given={NASA's\bibnamedelimb Glenn\bibnamedelima Research},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{fullhash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{bibnamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authorbibnamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authornamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authorfullhash}{88f68ab70e26fe1bb7df99887157434d}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turboprop Engine}
+      \verb{urlraw}
+      \verb https://www.grc.nasa.gov/WWW/k-12/airplane/aturbp.html
+      \endverb
+      \verb{url}
+      \verb https://www.grc.nasa.gov/WWW/k-12/airplane/aturbp.html
+      \endverb
+    \endentry
+    \entry{skybrary17}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b7eb24f94214171f3565a15c0d2ba9f6}{%
+           family={Skybrary},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{fullhash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{bibnamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authorbibnamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authornamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authorfullhash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Auxiliary Power Unit (APU)}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www.skybrary.aero/index.php/Auxiliary_Power_Unit_(APU)
+      \endverb
+      \verb{url}
+      \verb https://www.skybrary.aero/index.php/Auxiliary_Power_Unit_(APU)
+      \endverb
+    \endentry
+    \entry{skybrary16}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b7eb24f94214171f3565a15c0d2ba9f6}{%
+           family={Skybrary},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{fullhash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{bibnamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authorbibnamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authornamehash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \strng{authorfullhash}{b7eb24f94214171f3565a15c0d2ba9f6}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Turbofan Engine}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://www.skybrary.aero/index.php/Turbofan_Engine
+      \endverb
+      \verb{url}
+      \verb https://www.skybrary.aero/index.php/Turbofan_Engine
+      \endverb
+    \endentry
+    \entry{wt08}{online}{}
+      \name{author}{1}{}{%
+        {{hash=afc47ad03e8a90c326757fd87becc51f}{%
+           family={Team},
+           familyi={T\bibinitperiod},
+           given={White},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{afc47ad03e8a90c326757fd87becc51f}
+      \strng{fullhash}{afc47ad03e8a90c326757fd87becc51f}
+      \strng{bibnamehash}{afc47ad03e8a90c326757fd87becc51f}
+      \strng{authorbibnamehash}{afc47ad03e8a90c326757fd87becc51f}
+      \strng{authornamehash}{afc47ad03e8a90c326757fd87becc51f}
+      \strng{authorfullhash}{afc47ad03e8a90c326757fd87becc51f}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{RAM Air Turbine}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb https://mems.duke.edu/sites/mems.duke.edu/files/RAT%20White%20Final.pdf
+      \endverb
+      \verb{url}
+      \verb https://mems.duke.edu/sites/mems.duke.edu/files/RAT%20White%20Final.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
