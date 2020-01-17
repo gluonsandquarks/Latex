@@ -1,0 +1,55 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{spinoffnasa}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6f2d49d261d76daa2441230e1fbf1723}{%
+           family={Spinoff},
+           familyi={S\bibinitperiod},
+           given={NASA},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {NASA: Dan Lockney}%
+      }
+      \strng{namehash}{6f2d49d261d76daa2441230e1fbf1723}
+      \strng{fullhash}{6f2d49d261d76daa2441230e1fbf1723}
+      \strng{bibnamehash}{6f2d49d261d76daa2441230e1fbf1723}
+      \strng{authorbibnamehash}{6f2d49d261d76daa2441230e1fbf1723}
+      \strng{authornamehash}{6f2d49d261d76daa2441230e1fbf1723}
+      \strng{authorfullhash}{6f2d49d261d76daa2441230e1fbf1723}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Damage-Tolerant Fan Casings for Jet Engines}
+      \verb{urlraw}
+      \verb https://spinoff.nasa.gov/Spinoff2006/T_1.html
+      \endverb
+      \verb{url}
+      \verb https://spinoff.nasa.gov/Spinoff2006/T_1.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,112 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{nasacomb}{online}{}
+      \name{author}{1}{}{%
+        {{hash=88f68ab70e26fe1bb7df99887157434d}{%
+           family={Center},
+           familyi={C\bibinitperiod},
+           given={NASA's\bibnamedelimb Glenn\bibnamedelima Research},
+           giveni={N\bibinitperiod\bibinitdelim G\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{fullhash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{bibnamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authorbibnamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authornamehash}{88f68ab70e26fe1bb7df99887157434d}
+      \strng{authorfullhash}{88f68ab70e26fe1bb7df99887157434d}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Combustor - Burner}
+      \verb{urlraw}
+      \verb https://www.grc.nasa.gov/WWW/K-12/airplane/burner.html
+      \endverb
+      \verb{url}
+      \verb https://www.grc.nasa.gov/WWW/K-12/airplane/burner.html
+      \endverb
+    \endentry
+    \entry{rset}{online}{}
+      \name{author}{1}{}{%
+        {{hash=28c856cd57720ae61c3b727a4f147353}{%
+           family={James},
+           familyi={J\bibinitperiod},
+           given={Asst.\bibnamedelimi Professor\bibnamedelima Akash},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Dept. of Mechanical Engineering, RSET}%
+      }
+      \strng{namehash}{28c856cd57720ae61c3b727a4f147353}
+      \strng{fullhash}{28c856cd57720ae61c3b727a4f147353}
+      \strng{bibnamehash}{28c856cd57720ae61c3b727a4f147353}
+      \strng{authorbibnamehash}{28c856cd57720ae61c3b727a4f147353}
+      \strng{authornamehash}{28c856cd57720ae61c3b727a4f147353}
+      \strng{authorfullhash}{28c856cd57720ae61c3b727a4f147353}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Gas Turbine Combustion Chamber}
+      \verb{urlraw}
+      \verb https://www.rajagiritech.ac.in/Home/mech/Course_Content/Semester%20IV/ME%20204%20Thermal%20Engineering/Module%206.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.rajagiritech.ac.in/Home/mech/Course_Content/Semester%20IV/ME%20204%20Thermal%20Engineering/Module%206.pdf
+      \endverb
+    \endentry
+    \entry{nag00}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d3f3ec00f9124b95b2ab3ed1e4085cab}{%
+           family={Nagpurwala},
+           familyi={N\bibinitperiod},
+           given={Q.\bibnamedelimi H.},
+           giveni={Q\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Ramaiah School of Advanced Studies}%
+      }
+      \strng{namehash}{d3f3ec00f9124b95b2ab3ed1e4085cab}
+      \strng{fullhash}{d3f3ec00f9124b95b2ab3ed1e4085cab}
+      \strng{bibnamehash}{d3f3ec00f9124b95b2ab3ed1e4085cab}
+      \strng{authorbibnamehash}{d3f3ec00f9124b95b2ab3ed1e4085cab}
+      \strng{authornamehash}{d3f3ec00f9124b95b2ab3ed1e4085cab}
+      \strng{authorfullhash}{d3f3ec00f9124b95b2ab3ed1e4085cab}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Design of Gas Turbine Combustors}
+      \verb{urlraw}
+      \verb http://164.100.133.129:81/econtent/Uploads/12%20PT12-Combustor%2061%20%5BCompatibility%20Mode%5D.pdf
+      \endverb
+      \verb{url}
+      \verb http://164.100.133.129:81/econtent/Uploads/12%20PT12-Combustor%2061%20%5BCompatibility%20Mode%5D.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

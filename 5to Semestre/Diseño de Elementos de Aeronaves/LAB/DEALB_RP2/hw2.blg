@@ -1,0 +1,16 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'hw2.blg'
+[93] biber:313> INFO - === lun dic  2, 2019, 07:36:20
+[220] Biber.pm:371> INFO - Reading 'hw2.bcf'
+[315] Biber.pm:857> INFO - Found 1 citekeys in bib section 0
+[331] Biber.pm:3981> INFO - Processing section 0
+[360] Biber.pm:4154> INFO - Looking for bibtex format file 'referencias.bib' for section 0
+[361] bibtex.pm:1468> INFO - LaTeX decoding ...
+[376] bibtex.pm:1294> INFO - Found BibTeX data source 'referencias.bib'
+[394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'level = 4' with 'level = 2'
+[394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[394] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[394] Biber.pm:3809> INFO - Sorting list 'cms/global//global/global' of type 'entry' with template 'cms' and locale 'en-US'
+[394] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-US'
+[402] bbl.pm:617> INFO - Writing 'hw2.bbl' with encoding 'UTF-8'
+[402] bbl.pm:720> INFO - Output to hw2.bbl

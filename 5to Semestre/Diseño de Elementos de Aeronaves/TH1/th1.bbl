@@ -1,0 +1,556 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{nasa09}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c833105a7cc57ff285a554fdc6ea7a5d}{%
+           family={Teney},
+           familyi={T\bibinitperiod},
+           given={Darrel\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=17544080087542dd0b379a6f5450c76d}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Jr.},
+           giveni={J\bibinitperiod},
+           suffix={John\bibnamedelima G.},
+           suffixi={J\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=749ff0e9a3f7485cb18a24b895a1b6f0}{%
+           family={Pipes},
+           familyi={P\bibinitperiod},
+           given={R.\bibnamedelimi Byron},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=c740d61221223c4926e19fbef124ee5f}{%
+           family={Johnston},
+           familyi={J\bibinitperiod},
+           given={Norman},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{6bb2654eac3706d63e91768c85af8d56}
+      \strng{fullhash}{ed813cb0fd853e3bc146e869d5da7282}
+      \strng{bibnamehash}{6bb2654eac3706d63e91768c85af8d56}
+      \strng{authorbibnamehash}{6bb2654eac3706d63e91768c85af8d56}
+      \strng{authornamehash}{6bb2654eac3706d63e91768c85af8d56}
+      \strng{authorfullhash}{ed813cb0fd853e3bc146e869d5da7282}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NASA Langley Research Center}
+      \field{title}{NASA Composite Materials Development: Lessons Learned and Future Challenges}
+      \field{year}{2009}
+      \verb{doi}
+      \verb https://ntrs.nasa.gov/search.jsp?R=20090037429
+      \endverb
+    \endentry
+    \entry{rsc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fb8c68576fddf80431cd98f7fa493497}{%
+           family={Chemistry},
+           familyi={C\bibinitperiod},
+           given={Royal\bibnamedelima Society},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{fb8c68576fddf80431cd98f7fa493497}
+      \strng{fullhash}{fb8c68576fddf80431cd98f7fa493497}
+      \strng{bibnamehash}{fb8c68576fddf80431cd98f7fa493497}
+      \strng{authorbibnamehash}{fb8c68576fddf80431cd98f7fa493497}
+      \strng{authornamehash}{fb8c68576fddf80431cd98f7fa493497}
+      \strng{authorfullhash}{fb8c68576fddf80431cd98f7fa493497}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Composite Materials}
+      \verb{urlraw}
+      \verb https://www.rsc.org/Education/Teachers/Resources/Inspirational/Resources/4.3.1.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.rsc.org/Education/Teachers/Resources/Inspirational/Resources/4.3.1.pdf
+      \endverb
+    \endentry
+    \entry{owonubi19}{article}{}
+      \name{author}{5}{}{%
+        {{hash=dcb84af7bca6b2c67e2c5b95766f02a4}{%
+           family={Shesan},
+           familyi={S\bibinitperiod},
+           given={Owonubi\bibnamedelima J.},
+           giveni={O\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=c298e9d237706d9da616ce1811b82f6d}{%
+           family={Stephen},
+           familyi={S\bibinitperiod},
+           given={Agwuncha\bibnamedelima C.},
+           giveni={A\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=ad6df609d84c3931322d8dbe2083c3ba}{%
+           family={Chioma},
+           familyi={C\bibinitperiod},
+           given={Anusionwu\bibnamedelima G.},
+           giveni={A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=f7973ec9017132ed4e5e6583f100475c}{%
+           family={Neerish},
+           familyi={N\bibinitperiod},
+           given={Revaprasadu},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9bf4486437f1d01c2b5cbef91fc62e9d}{%
+           family={Rotimi},
+           familyi={R\bibinitperiod},
+           given={Sadiku\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{dfbebb815db6153974a6aaaff91ddafe}
+      \strng{fullhash}{72b93b6718b3e43e75f1c161c9fb8a1c}
+      \strng{bibnamehash}{dfbebb815db6153974a6aaaff91ddafe}
+      \strng{authorbibnamehash}{dfbebb815db6153974a6aaaff91ddafe}
+      \strng{authornamehash}{dfbebb815db6153974a6aaaff91ddafe}
+      \strng{authorfullhash}{72b93b6718b3e43e75f1c161c9fb8a1c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IntechOpen}
+      \field{title}{Fiber-Matrix Relationship for Composites Preparation}
+      \field{year}{2019}
+      \verb{doi}
+      \verb 10.5772/intechopen.84753
+      \endverb
+    \endentry
+    \entry{altenbach04}{book}{}
+      \name{author}{3}{}{%
+        {{hash=6cc8b128d95b05d61deed7bf8ae66d41}{%
+           family={Altenbach},
+           familyi={A\bibinitperiod},
+           given={Holm},
+           giveni={H\bibinitperiod}}}%
+        {{hash=7bdaa3ebb39bc388e3de30c39620a421}{%
+           family={Altenbach},
+           familyi={A\bibinitperiod},
+           given={Johannes\bibnamedelima W.},
+           giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=c09daa48c17f8a5ec3f2938d437b7336}{%
+           family={Kissing},
+           familyi={K\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag Berlin Heidelberg}%
+      }
+      \strng{namehash}{75462fe026048a6c0cd86171024baf7f}
+      \strng{fullhash}{75462fe026048a6c0cd86171024baf7f}
+      \strng{bibnamehash}{75462fe026048a6c0cd86171024baf7f}
+      \strng{authorbibnamehash}{75462fe026048a6c0cd86171024baf7f}
+      \strng{authornamehash}{75462fe026048a6c0cd86171024baf7f}
+      \strng{authorfullhash}{75462fe026048a6c0cd86171024baf7f}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{First edition}
+      \field{title}{Mechanics of Composite Structural Elements}
+      \field{year}{2004}
+    \endentry
+    \entry{campbell10}{book}{}
+      \name{author}{1}{}{%
+        {{hash=13d885411b6f238cda219c3646f4ae4c}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={F.\bibnamedelimi C.},
+           giveni={F\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ASM International}%
+      }
+      \strng{namehash}{13d885411b6f238cda219c3646f4ae4c}
+      \strng{fullhash}{13d885411b6f238cda219c3646f4ae4c}
+      \strng{bibnamehash}{13d885411b6f238cda219c3646f4ae4c}
+      \strng{authorbibnamehash}{13d885411b6f238cda219c3646f4ae4c}
+      \strng{authornamehash}{13d885411b6f238cda219c3646f4ae4c}
+      \strng{authorfullhash}{13d885411b6f238cda219c3646f4ae4c}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Structural Composite Materials}
+      \field{year}{2010}
+    \endentry
+    \entry{idowu15}{article}{}
+      \name{author}{6}{}{%
+        {{hash=a73250c9f4c1cb0c5e785a0950d05cbd}{%
+           family={Ibrahim},
+           familyi={I\bibinitperiod},
+           given={Idowu\bibnamedelima D.},
+           giveni={I\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=c7642a57abf4bbfac7e1c3dea344cc8e}{%
+           family={Jamiru},
+           familyi={J\bibinitperiod},
+           given={Tamba},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8d05912de6be8f75d1fa0941795cf0e5}{%
+           family={Sadiku},
+           familyi={S\bibinitperiod},
+           given={Rotimi\bibnamedelima E.},
+           giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=4691ce48c094a4cc6a1037672032bdec}{%
+           family={Kupolati},
+           familyi={K\bibinitperiod},
+           given={Williams\bibnamedelima K.},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=91599fe299790dd3e96d29708c5f2213}{%
+           family={Agwuncha},
+           familyi={A\bibinitperiod},
+           given={Stephen\bibnamedelima C.},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=42bc8d7c8b9652685f0fe4e92ca6e853}{%
+           family={Ekundayo},
+           familyi={E\bibinitperiod},
+           given={Gbenga},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d6aba407afb5bc8739e398d2d3491947}
+      \strng{fullhash}{994ee1c53f494d2cd15fbe6a752e89e3}
+      \strng{bibnamehash}{d6aba407afb5bc8739e398d2d3491947}
+      \strng{authorbibnamehash}{d6aba407afb5bc8739e398d2d3491947}
+      \strng{authornamehash}{d6aba407afb5bc8739e398d2d3491947}
+      \strng{authorfullhash}{994ee1c53f494d2cd15fbe6a752e89e3}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Reinforced Plastics and Composites}
+      \field{title}{The Use of Polypropylene in Bamboo Fibre Composite and their Mechanical Properties – A Review}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.1177/0731684415591302
+      \endverb
+    \endentry
+    \entry{roylance00}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7a91a398df7333a56da571101bd2f0b4}{%
+           family={Roylance},
+           familyi={R\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a91a398df7333a56da571101bd2f0b4}
+      \strng{fullhash}{7a91a398df7333a56da571101bd2f0b4}
+      \strng{bibnamehash}{7a91a398df7333a56da571101bd2f0b4}
+      \strng{authorbibnamehash}{7a91a398df7333a56da571101bd2f0b4}
+      \strng{authornamehash}{7a91a398df7333a56da571101bd2f0b4}
+      \strng{authorfullhash}{7a91a398df7333a56da571101bd2f0b4}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Department of Material Science and Engineering, MIT}
+      \field{title}{Laminated Composite Plates}
+      \field{year}{2000}
+      \verb{urlraw}
+      \verb http://web.mit.edu/course/3/3.11/www/modules/laminates.pdf
+      \endverb
+      \verb{url}
+      \verb http://web.mit.edu/course/3/3.11/www/modules/laminates.pdf
+      \endverb
+    \endentry
+    \entry{sandcore}{article}{}
+      \name{author}{1}{}{%
+        {{hash=231302f9179e53f73f15b83a11b61842}{%
+           family={Advanced\bibnamedelimb Sandwich\bibnamedelimb Structures\bibnamedelimb in\bibnamedelimb the\bibnamedelimb Transport\bibnamedelimb Industries\bibnamedelimb Under\bibnamedelimb European\bibnamedelimb Commission\bibnamedelimb Contract\bibnamedelimb No.\bibnamedelimi FP6-506330},
+           familyi={A\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim i\bibinitperiod\bibinitdelim t\bibinitperiod\bibinitdelim T\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim E\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim F\bibinithyphendelim 5\bibinitperiod},
+           given={SAND.CORe\bibnamedelimb Co-ordination\bibnamedelima Action},
+           giveni={S\bibinitperiod\bibinitdelim C\bibinithyphendelim o\bibinitperiod\bibinitdelim A\bibinitperiod},
+           prefix={on},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{231302f9179e53f73f15b83a11b61842}
+      \strng{fullhash}{231302f9179e53f73f15b83a11b61842}
+      \strng{bibnamehash}{231302f9179e53f73f15b83a11b61842}
+      \strng{authorbibnamehash}{231302f9179e53f73f15b83a11b61842}
+      \strng{authornamehash}{231302f9179e53f73f15b83a11b61842}
+      \strng{authorfullhash}{231302f9179e53f73f15b83a11b61842}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{NewRail, University of Newcastle upon Tyne}
+      \field{title}{Best Practice Guide for Sandwich Structures in Marine Applications}
+      \verb{urlraw}
+      \verb https://trimis.ec.europa.eu/sites/default/files/project/documents/20130201_105501_16344_RevisedBPGv1-00---Report-Format.pdf
+      \endverb
+      \verb{url}
+      \verb https://trimis.ec.europa.eu/sites/default/files/project/documents/20130201_105501_16344_RevisedBPGv1-00---Report-Format.pdf
+      \endverb
+    \endentry
+    \entry{li14}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d8b40dce3815d254bab6bd86807262cf}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yijing},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7df4416ec12b85123d30d233043f80fd}{%
+           family={Barbič},
+           familyi={B\bibinitperiod},
+           given={Jernej},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{378318d14d89aca08b7e4ce68b2eafca}
+      \strng{fullhash}{378318d14d89aca08b7e4ce68b2eafca}
+      \strng{bibnamehash}{378318d14d89aca08b7e4ce68b2eafca}
+      \strng{authorbibnamehash}{378318d14d89aca08b7e4ce68b2eafca}
+      \strng{authornamehash}{378318d14d89aca08b7e4ce68b2eafca}
+      \strng{authorfullhash}{378318d14d89aca08b7e4ce68b2eafca}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Eurographic's Association}
+      \field{title}{Stable Orthotropic Materials}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://run.usc.edu/orthotropic/LiBarbicStableOrthotropicMaterials-SCA2014.pdf
+      \endverb
+      \verb{url}
+      \verb http://run.usc.edu/orthotropic/LiBarbicStableOrthotropicMaterials-SCA2014.pdf
+      \endverb
+    \endentry
+    \entry{rajanish13}{article}{}
+      \name{author}{4}{}{%
+        {{hash=5acd7474bb2ec39abccf3a3d9993ba98}{%
+           family={M.},
+           familyi={M\bibinitperiod},
+           given={Rajanish},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f79b30706b25b7983994953d4fdad0e4}{%
+           family={V.},
+           familyi={V\bibinitperiod},
+           given={Dr.\bibnamedelimi Nanjundaradhya\bibnamedelima N.},
+           giveni={D\bibinitperiod\bibinitdelim N\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=8610f0c95d30f27632e6f7cc5aa82533}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Dr.\bibnamedelimi Ramesh\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=fd03aa9c0e72f3ec4d85c34c6e448d77}{%
+           family={pal},
+           familyi={p\bibinitperiod},
+           given={Dr.\bibnamedelimi Bhaskar},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f6f406a4e587b2419e01a3889a85c64}
+      \strng{fullhash}{424106321765a3a8e277b16d5c410acb}
+      \strng{bibnamehash}{3f6f406a4e587b2419e01a3889a85c64}
+      \strng{authorbibnamehash}{3f6f406a4e587b2419e01a3889a85c64}
+      \strng{authornamehash}{3f6f406a4e587b2419e01a3889a85c64}
+      \strng{authorfullhash}{424106321765a3a8e277b16d5c410acb}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Engineering Research and Applications (IJERA)}
+      \field{title}{A Review of Failure of Composite Materials}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.414.6035&rep=rep1&type=pdf
+      \endverb
+      \verb{url}
+      \verb http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.414.6035&rep=rep1&type=pdf
+      \endverb
+    \endentry
+    \entry{bansal09}{book}{}
+      \name{author}{1}{}{%
+        {{hash=5f2941a950957274f66376928ec1067e}{%
+           family={Bansal},
+           familyi={B\bibinitperiod},
+           given={Dr.\bibnamedelimi R.\bibnamedelimi K.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {LAXMI PUBLICATIONS (P) LTD}%
+      }
+      \strng{namehash}{5f2941a950957274f66376928ec1067e}
+      \strng{fullhash}{5f2941a950957274f66376928ec1067e}
+      \strng{bibnamehash}{5f2941a950957274f66376928ec1067e}
+      \strng{authorbibnamehash}{5f2941a950957274f66376928ec1067e}
+      \strng{authornamehash}{5f2941a950957274f66376928ec1067e}
+      \strng{authorfullhash}{5f2941a950957274f66376928ec1067e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{A Textbook of Strength of Materials}
+      \field{year}{2009}
+    \endentry
+    \entry{grasso18}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6ab02a204a5f1e0a254448f754454992}{%
+           family={Grasso},
+           familyi={G\bibinitperiod},
+           given={Amadeo},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ab02a204a5f1e0a254448f754454992}
+      \strng{fullhash}{6ab02a204a5f1e0a254448f754454992}
+      \strng{bibnamehash}{6ab02a204a5f1e0a254448f754454992}
+      \strng{authorbibnamehash}{6ab02a204a5f1e0a254448f754454992}
+      \strng{authornamehash}{6ab02a204a5f1e0a254448f754454992}
+      \strng{authorfullhash}{6ab02a204a5f1e0a254448f754454992}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Politecnico Di Torino}
+      \field{title}{Implementation of classical and advanced failure criteria for composite layered structures in FEMAP and assessment of results}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://webthesis.biblio.polito.it/6883/1/tesi.pdf
+      \endverb
+      \verb{url}
+      \verb https://webthesis.biblio.polito.it/6883/1/tesi.pdf
+      \endverb
+    \endentry
+    \entry{li17}{article}{}
+      \name{author}{4}{}{%
+        {{hash=77686c67c5dc36c9d824fbe4fbfe36c6}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shuguang},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1050638ab0e4e0b3557c23e2111c10c4}{%
+           family={Sitnikova},
+           familyi={S\bibinitperiod},
+           given={Elena},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c8a8b7c57bc0772ea5235ba424bd6a56}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Yuning},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=3c5f6e3a31d693f9a95044b2cc1ff962}{%
+           family={Kaddour},
+           familyi={K\bibinitperiod},
+           given={Abdul-Salam},
+           giveni={A\bibinithyphendelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{19309944caf252441e34e7ea8452a09e}
+      \strng{fullhash}{ce26b0a9e8aa616915ec58a0c0180309}
+      \strng{bibnamehash}{19309944caf252441e34e7ea8452a09e}
+      \strng{authorbibnamehash}{19309944caf252441e34e7ea8452a09e}
+      \strng{authornamehash}{19309944caf252441e34e7ea8452a09e}
+      \strng{authorfullhash}{ce26b0a9e8aa616915ec58a0c0180309}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ELSEVIER}
+      \field{title}{The Tsai-Wu failure criterion rationalised in the context of UDcomposites}
+      \field{year}{2017}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.compositesa.2017.08.007
+      \endverb
+    \endentry
+    \entry{sohel16}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f45f4c90910b58a04390f218f56e8f99}{%
+           family={Rana},
+           familyi={R\bibinitperiod},
+           given={Sohel},
+           giveni={S\bibinitperiod}}}%
+        {{hash=03a3cd2a1c9751dec79f48ba2446c645}{%
+           family={Fangueiro},
+           familyi={F\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Woodhead Publishing}%
+      }
+      \strng{namehash}{7e414ecb5f1048ab4120e6d676811bd4}
+      \strng{fullhash}{7e414ecb5f1048ab4120e6d676811bd4}
+      \strng{bibnamehash}{7e414ecb5f1048ab4120e6d676811bd4}
+      \strng{authorbibnamehash}{7e414ecb5f1048ab4120e6d676811bd4}
+      \strng{authornamehash}{7e414ecb5f1048ab4120e6d676811bd4}
+      \strng{authorfullhash}{7e414ecb5f1048ab4120e6d676811bd4}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Advanced Composite Materialsfor Aerospace Engineering}
+      \field{year}{2016}
+    \endentry
+    \entry{mrazova13}{article}{}
+      \name{author}{1}{}{%
+        {{hash=d089f8032ce6ddf168c0abcbd7cfcaad}{%
+           family={Mrazova},
+           familyi={M\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{d089f8032ce6ddf168c0abcbd7cfcaad}
+      \strng{fullhash}{d089f8032ce6ddf168c0abcbd7cfcaad}
+      \strng{bibnamehash}{d089f8032ce6ddf168c0abcbd7cfcaad}
+      \strng{authorbibnamehash}{d089f8032ce6ddf168c0abcbd7cfcaad}
+      \strng{authornamehash}{d089f8032ce6ddf168c0abcbd7cfcaad}
+      \strng{authorfullhash}{d089f8032ce6ddf168c0abcbd7cfcaad}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{INCAS BULLETIN}
+      \field{title}{Advanced composite materials of the future in aerospace industry}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.13111/2066-8201.2013.5.3.14
+      \endverb
+    \endentry
+    \entry{nayak14}{article}{}
+      \name{author}{1}{}{%
+        {{hash=25c72a7c0d9d11a1fd57e502b2b91f83}{%
+           family={Nayak},
+           familyi={N\bibinitperiod},
+           given={Nikhil\bibnamedelima V.},
+           giveni={N\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{25c72a7c0d9d11a1fd57e502b2b91f83}
+      \strng{fullhash}{25c72a7c0d9d11a1fd57e502b2b91f83}
+      \strng{bibnamehash}{25c72a7c0d9d11a1fd57e502b2b91f83}
+      \strng{authorbibnamehash}{25c72a7c0d9d11a1fd57e502b2b91f83}
+      \strng{authornamehash}{25c72a7c0d9d11a1fd57e502b2b91f83}
+      \strng{authorfullhash}{25c72a7c0d9d11a1fd57e502b2b91f83}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Scientific and Research Publications}
+      \field{title}{Composite Materials in Aerospace Applications}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb https://pdfs.semanticscholar.org/3a73/\\9ca726a88cf833ba89708a4944c46457e42d.pdf
+      \endverb
+      \verb{url}
+      \verb https://pdfs.semanticscholar.org/3a73/%5C%5C9ca726a88cf833ba89708a4944c46457e42d.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

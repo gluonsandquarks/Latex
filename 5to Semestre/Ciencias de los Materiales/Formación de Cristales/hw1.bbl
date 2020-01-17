@@ -1,0 +1,114 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{aldebe19}{online}{}
+      \name{author}{2}{}{%
+        {{hash=78630a17e647458c48d8c886d1da6f25}{%
+           family={Bilmes},
+           familyi={B\bibinitperiod},
+           given={Dra.\bibnamedelimi Sara\bibnamedelima Aldebe},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=81d0d338d16e993f04812a874285386e}{%
+           family={Doctorovich},
+           familyi={D\bibinitperiod},
+           given={Dr.\bibnamedelimi Fabio},
+           giveni={D\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5cb7e062bc4fc7fc721c13e4d0d60c2}
+      \strng{fullhash}{d5cb7e062bc4fc7fc721c13e4d0d60c2}
+      \strng{bibnamehash}{d5cb7e062bc4fc7fc721c13e4d0d60c2}
+      \strng{authorbibnamehash}{d5cb7e062bc4fc7fc721c13e4d0d60c2}
+      \strng{authornamehash}{d5cb7e062bc4fc7fc721c13e4d0d60c2}
+      \strng{authorfullhash}{d5cb7e062bc4fc7fc721c13e4d0d60c2}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Materiales Cristalinos}
+      \field{year}{Extraído en 2019}
+      \verb{urlraw}
+      \verb http://www.bnm.me.gov.ar/giga1/documentos/EL002321.pdf
+      \endverb
+      \verb{url}
+      \verb http://www.bnm.me.gov.ar/giga1/documentos/EL002321.pdf
+      \endverb
+    \endentry
+    \entry{chang13}{book}{}
+      \name{author}{2}{}{%
+        {{hash=139e707a446c1a81b230375c8c5cf661}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Raymond},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7c93f87d8a57b1dff1b0be3ef9607051}{%
+           family={Goldsby},
+           familyi={G\bibinitperiod},
+           given={Kenneth\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{5e5d4c929acfb9d3b86e932de5315ec6}
+      \strng{fullhash}{5e5d4c929acfb9d3b86e932de5315ec6}
+      \strng{bibnamehash}{5e5d4c929acfb9d3b86e932de5315ec6}
+      \strng{authorbibnamehash}{5e5d4c929acfb9d3b86e932de5315ec6}
+      \strng{authornamehash}{5e5d4c929acfb9d3b86e932de5315ec6}
+      \strng{authorfullhash}{5e5d4c929acfb9d3b86e932de5315ec6}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-607-15-0928-4}
+      \field{title}{Química (11ª Edición)}
+      \field{year}{2013}
+    \endentry
+    \entry{sa19}{online}{}
+      \name{author}{1}{}{%
+        {{hash=1a079d67a6e4252b9ad38efe27da1caf}{%
+           family={Association},
+           familyi={A\bibinitperiod},
+           given={Salt},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{1a079d67a6e4252b9ad38efe27da1caf}
+      \strng{fullhash}{1a079d67a6e4252b9ad38efe27da1caf}
+      \strng{bibnamehash}{1a079d67a6e4252b9ad38efe27da1caf}
+      \strng{authorbibnamehash}{1a079d67a6e4252b9ad38efe27da1caf}
+      \strng{authornamehash}{1a079d67a6e4252b9ad38efe27da1caf}
+      \strng{authorfullhash}{1a079d67a6e4252b9ad38efe27da1caf}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{How to grow a salt crystal.}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.saltassociation.co.uk/education/properties-of-salt/grow-salt-crystal/
+      \endverb
+      \verb{url}
+      \verb https://www.saltassociation.co.uk/education/properties-of-salt/grow-salt-crystal/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

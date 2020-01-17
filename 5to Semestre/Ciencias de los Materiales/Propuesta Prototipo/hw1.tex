@@ -1,0 +1,61 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[justification=centering]{caption}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[framed, numbered]{matlab-prettifier}
+\usepackage{lipsum}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+%\usepackage[framed, numbered, autolinebreaks, useliterate]{mcode}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\lhead{}
+\rfoot{\thepage}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[backend=biber, sorting=none]{biblatex}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{\textbf{Diseño de Ingeniería: Prototipo}}
+\author{\textbf{Equipo \#3:}\\
+\footnotesize {\textit{Vásquez Castañeda Carlos Antonio}}\\
+\footnotesize {\textit{López García Kevin}}\\
+\footnotesize {\textit{Gonzalez Román Brenda Isabel}}\\
+\footnotesize {\textit{Aguilera Manríquez Carlos Alfredo}}\\
+}
+\date{}
+% Inicio del documento
+\begin{document}
+\maketitle
+%%%%% Bib
+
+\section*{Roles de los Integrantes}
+\begin{itemize}
+	\item Capitán: Vásquez Castañeda Carlos Antonio
+	\item Materiales: López García Kevin y Aguilera Manríquez Carlos Alfredo
+	\item Registro: Gonzalez Román Brenda Isabel
+\end{itemize}
+
+\section*{Nombre del Prototipo: Celular con Panel Solar}
+\textbf{Descripción:}\\
+Este producto va dirigido a aquella población demográfica que utiliza frecuentemente su celular. La utilización de un panel solar pequeño en un teléfono celular podrá aumentar considerablemente la duración de la batería interna de éste. Así, cuando el celular esté en uso o en reposo, si con éste interactúan ondas electromagnéticas podrá obtener una parte de su energía mediante este dispositivo.
+\renewcommand\refname{Referencias}
+\printbibliography
+
+\end{document}

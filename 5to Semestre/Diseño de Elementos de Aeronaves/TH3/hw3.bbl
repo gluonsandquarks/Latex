@@ -1,0 +1,49 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{fitz82}{book}{}
+      \name{author}{1}{}{%
+        {{hash=656c90a06155fa60d79e54ab48e4e51d}{%
+           family={Fitzgerald},
+           familyi={F\bibinitperiod},
+           given={Robert\bibnamedelima W.},
+           giveni={R\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{656c90a06155fa60d79e54ab48e4e51d}
+      \strng{fullhash}{656c90a06155fa60d79e54ab48e4e51d}
+      \strng{bibnamehash}{656c90a06155fa60d79e54ab48e4e51d}
+      \strng{authorbibnamehash}{656c90a06155fa60d79e54ab48e4e51d}
+      \strng{authornamehash}{656c90a06155fa60d79e54ab48e4e51d}
+      \strng{authorfullhash}{656c90a06155fa60d79e54ab48e4e51d}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mechanics of Materials}
+      \field{year}{1982}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
