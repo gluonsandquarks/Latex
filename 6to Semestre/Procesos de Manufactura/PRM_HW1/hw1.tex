@@ -1,0 +1,94 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Tarea \#1: Cuestionario Diagnóstico}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 394}
+\date{Febrero 4, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Procesos de Manufactura}
+\lhead{Tarea \#1}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+	\item ¿Qué papel juega la manufactura en el nivel de vida de un país?
+
+		La industria manufacturera juega un papel clave en el crecimiento de prosperidad económica a través de una mayor productividad, mayor crecimiento del producto interno bruto (PIB) y crea oportunidades de trabajo con mayores ingresos. \autocite{deloitte}
+	
+	\item ¿Qué beneficios proporciona actualmente el reciclaje a la manufactura?
+
+		Uno de los principales beneficios es la utilización eficiente de los materiales necesarios para nuestro producto. Si se diseña una pieza y se llega a ella a partir de materia prima, es natural que parte de esta materia prima no sea utilizada. Por lo tanto, el diseño eficiente de estas piezas y el reciclaje de las sobras de éstas pueden permitirnos aprovechar más materia prima, ser amigable con el medio ambiente y ahorrar costos en la producción.\autocite {groover10}
+
+	\item ¿En qué difiere un sistema de un proceso? ¿O una máquina de una función u operación?
+
+		Un \textit{sistema} es una estructura que ha sido desarrollada con el fin de responder a las necesidades que se tienen que satisfacer para el logro de un objetivo en específico (un producto, por ejemplo). Mientras tanto, el \textit{proceso} es una parte del sistema, el cual transforma una entrada en salida. Puede referirse a una máquina, un individuo, una computadora, un producto químico, entre otros.
+
+	\item Explica las diferencias entre fabricación en un taller general, oficina de proyectos, manufactura en serie y celular.
+		
+		Un taller general hace pocos productos que son bastante personalizados. Una oficina de proyectos se encarga de establecer estándares en los procesos que se llevan acabo para realizar los productos. La manufactura en serie consiste en una línea de producción, usualmente para desarrollar una pieza en específico de la manera más eficiente, mientras que la celular lleva acabo el desarrollo de varias partes o piezas en distintos espacios de trabajo.
+	
+	\item ¿Cuáles son los procesos de fabricación básicos?
+
+		Los procesos de fabricación básicos se dividen en tres categorías: (1) procesos que cambian la forma de la materia prima (solidificación, deformación, maquinado, etc.), (2) procesos para cambiar la propiedad de los materiales (tratamiento térmico), (3) procesos de acabado de superficies (remoción de material, revestimientos).\autocite{groover10}
+
+	\item ¿Por qué sería conveniente que una pieza complicada de un metal duro que se fabrica por maquinado pueda obtenerse por moldeo? ¿Qué tipo de moldeo?
+
+		Porque el proceso de moldeo es posible automatizarlo y optimizarlo para hacerlo menos costosos y más rápido. Un método más eficiente es el de estirado, proceso de conformado por deformación plástica el cual se aplicaa los metales. Un ejemplo de la efectividad de este método es el de las latas aluminio para bebidas. El proceso se lleva a cabo en segundos, iniciando de una hoja circular de aluminio y terminando con un cilindro deformado. \autocite{engguy15}
+
+	\item ¿Por qué la producción a gran escala no es lo mismo que la producción en masa?
+
+		Porque la producción en masa involucra solamente piezas individuales y específicas, utilizando máquinas estándar con herramientas especializadas, dedicándose efectivamente a la producción de un tipo de parte/pieza. Por otro lado, la producción a gran escala/de flujo involucra varias estaciones de trabajo y de equipo dispuestos en una secuencia que haga más eficiente su producción. \autocite{groover10}
+
+	\item Enumere qué pasos considera se deben seguir para construir una lata de cerveza?
+
+		(1) A partir de una hoja de aluminio circular se comienza con la operación de estiramiento del metal para alargar sus paredes. (2) Se alargan progresivamente las paredes del cilíndro, con reducción de su espesor, a diámetro constante. (3) Se da forma al domo por estampación, sin reducción de espesor. (4) A partir de otros moldes se da forma al extremo superior de la lata, y asimismo se recorta debido a que no es uniforme or alargamiento irregular. (5) Se forma la pestaña del envase como se muestra en la figura. \autocite{engguy15}
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth]{1.png}
+			\caption{Pestañeado de la tapa de la lata con las paredes de la misma.}
+		\end{figure}
+
+	\item Se reconoce que el proceso mecanizado de rebaba es de bajo rendimiento, sin embargo, se utiliza probablemente más que ningún otro. ¿Por qué?
+
+		Diversos factores pueden afectar esta decisión, sin embargo los principales motivos son el costo. los costos convencionales de la utilización de máquinas-herramientas (que permiten el mecanizado) resultan en su mayoría menos costosos a comparación de la utilización de máquinas-herramientas de control numérico y máquinas especiales. Asimismo, el tiempo de preparación para la utilización de una máquina-herramienta de control numérico es mayor debido a la programación que se debe realizar de antemano.
+
+		Considerando todo esto, es bien sabido que los tiempos de operación son menores en máquinas de control numérico, por lo cual a partir de cierto número de piezas resulta ser más económico el maquinado numérico y máquinas especializadas.
+
+	\item ¿Qué relación guardan el electrodepósito y la galvanoplastia?
+
+		A partir de la electrodeposición es posible llevar acabo la galvanoplastia para reproducir objetos de detalles muy finos y en muy diversos metales. El proceso de electrodeposición se lleva acabo en una solución acuosa para que los cationes metálicos se sedimenten sobre un objeto conductor creando una capa.
+
+	\item ¿Qué diferencia existe entre mecanización y automatización?
+
+		La mecanización consiste en proveer a operadores humanos máquinas y herramientas para reemplazar su fuerza parcial o totalmente, ya sea reemplazando el labor manual o el uso de animales. El paso siguiente a la mecanización es el de la automatización, el cual, a partir de sistemas computarizados y electromecánicos controla maquinarios y/o procesos industriales, sustituyendo a operadores humanos.
+
+\end{enumerate}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

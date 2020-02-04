@@ -1,0 +1,11 @@
+-Arduino 1.0.1 or higher (lmao)
+-Proteus 8.4 (if possible?)
+
+Para que una práctica se considere como entregada:
+	1. Práctica #1.pdf (el documento en pdf y ya)
+	2. Práctica #1.ino (código en C)
+	3. Práctica #1.hex (maybe hexcode?) (Archivo que se carga directamente al microcontrolador)
+	4. Práctica #1.pdsprj (simulación en Proteus)
+
+Enviar todos esos archivos en un correo a:
+		jramirez53@uabc.edu.mx

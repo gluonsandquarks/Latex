@@ -1,0 +1,107 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{groover10}{book}{}
+      \name{author}{1}{}{%
+        {{hash=6459573646f7e6bc2d97596b6351b46b}{%
+           family={Groover},
+           familyi={G\bibinitperiod},
+           given={Mikell\bibnamedelima P.},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons, Inc.}%
+      }
+      \strng{namehash}{6459573646f7e6bc2d97596b6351b46b}
+      \strng{fullhash}{6459573646f7e6bc2d97596b6351b46b}
+      \strng{bibnamehash}{6459573646f7e6bc2d97596b6351b46b}
+      \strng{authorbibnamehash}{6459573646f7e6bc2d97596b6351b46b}
+      \strng{authornamehash}{6459573646f7e6bc2d97596b6351b46b}
+      \strng{authorfullhash}{6459573646f7e6bc2d97596b6351b46b}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{Cuarta Edicion}
+      \field{title}{Fundamentals of Modern Manufacturing --- Materials, Processes, and Systems}
+      \field{year}{2010}
+    \endentry
+    \entry{engguy15}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dbba31382fcb15dcd71f78176e25a06c}{%
+           family={Hammack},
+           familyi={H\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{dbba31382fcb15dcd71f78176e25a06c}
+      \strng{fullhash}{dbba31382fcb15dcd71f78176e25a06c}
+      \strng{bibnamehash}{dbba31382fcb15dcd71f78176e25a06c}
+      \strng{authorbibnamehash}{dbba31382fcb15dcd71f78176e25a06c}
+      \strng{authornamehash}{dbba31382fcb15dcd71f78176e25a06c}
+      \strng{authorfullhash}{dbba31382fcb15dcd71f78176e25a06c}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Ingenious Design of the Aluminum Beverage Can [Archivo de video]}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.youtube.com/watch?v=hUhisi2FBuw
+      \endverb
+      \verb{url}
+      \verb https://www.youtube.com/watch?v=hUhisi2FBuw
+      \endverb
+    \endentry
+    \entry{deloitte}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fd82671d4555c6ac7a812e9e146f6aba}{%
+           family={S.C.},
+           familyi={S\bibinitperiod},
+           given={Deloitte\bibnamedelimb Consulting\bibnamedelima Group},
+           giveni={D\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd82671d4555c6ac7a812e9e146f6aba}
+      \strng{fullhash}{fd82671d4555c6ac7a812e9e146f6aba}
+      \strng{bibnamehash}{fd82671d4555c6ac7a812e9e146f6aba}
+      \strng{authorbibnamehash}{fd82671d4555c6ac7a812e9e146f6aba}
+      \strng{authornamehash}{fd82671d4555c6ac7a812e9e146f6aba}
+      \strng{authorfullhash}{fd82671d4555c6ac7a812e9e146f6aba}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Manufactura en México --- Fabricando un mundo cambiante}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://www2.deloitte.com/content/dam/Deloitte/mx/Documents/manufacturing/Servicios-para-Manufactura-2017.pdf
+      \endverb
+      \verb{url}
+      \verb https://www2.deloitte.com/content/dam/Deloitte/mx/Documents/manufacturing/Servicios-para-Manufactura-2017.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
