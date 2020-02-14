@@ -1,0 +1,220 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{verbatim}
+\input{arduinoLanguage.tex}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Práctica \#2: Simulación de un Semáforo}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 395}
+\date{Febrero 12, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Instrumenación}
+\lhead{Práctica \#2}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\section*{Introducción}
+
+Los sistemas electrónicos con microcontroladores se utilizan en muchos dispositivos hoy en día. Comprenderlos resulta de gran ventaja y realizar un programa que simule uno de estos dispositivos resulta en un beneficio para la comprensión de estos sistemas.
+
+\section*{Objetivo}
+
+El objetivo de esta práctica es reforzar aquello enseñado por la práctica \#1 y volverlo un poco más complicado para entender la lógica de programación detrás de Arduino. 
+
+\section*{Marco Teórico}
+Para la elaboración de el semáforo es necesario entender algunas funciones básicas:
+
+\begin{itemize}
+	\item pinMode(pin, mode): configura el modo de salida de cada conexión disponible en el microcontrolador de Arduino.
+	\item digitalWrite(pin, HIGH/LOW): escribe un valor de ALTO o BAJO en la conexión del contacto que se ha elegido, sean 5 volts o 3.3 volts.
+\end{itemize}
+
+\section*{Materiales y Equipo}
+\begin{itemize}
+	\item Arduino UNO
+	\item Arduino IDE
+	\item Proteus 8 Professional
+	\item LEDs (3)
+	\item Resistencia 220 $\Omega$ (3)
+	\item Referencias de internet (StackExchange, Arduino.cc)
+\end{itemize}
+
+\section*{Desarrollo}
+Dada la simulación que deseamos realizar es la de un semáforo, tendremos que configurar 3 luces distintas para que actúen como aquellas que tienen un semáforo de verdad. Para esto utilizaremos tres LEDs, uno verde, uno amarillo y otro rojo. Estos los definimos al inicio del código del programa, como se muestra a continuación.
+
+\begin{lstlisting}[language=Arduino]
+	int v = 13;
+	int a = 12;
+	int r = 11;
+\end{lstlisting}
+
+Una vez asignadas estas variables a los distintas conexiones del microcontrolador, es necesario definirlas como posibles salidas o entradas. Dado el funcionamiento que queremos obtener del controlador, será necesario configurar estas conexiones como salidas.
+
+\begin{lstlisting}[language=Arduino]
+	void setup () {
+		pinMode(v, OUTPUT);
+		pinMode(a, OUTPUT);
+		pinMode(r, OUTPUT);
+		}
+\end{lstlisting}
+
+Finalmente sigue regular el encendido y apagado de las distintas luces que estarán a nuestra disposición. Para esto, considerando que aún no hemos aprendido estructuras de código complejas, utilizaremos lo que hemos aprendido en la práctica \#1 para realizar el siguiente bloque de código.
+
+\begin{lstlisting}[language=Arduino]
+	void loop () {
+		digitalWrite(v, 1);
+		delay(5000);
+
+		digitalWrite(v, 0);
+		delay(500);
+		digitalWrite(v, 1);
+		delay(500);
+		digitalWrite(v, 0);
+		delay(500);
+		digitalWrite(v, 1);
+		delay(500);
+		digitalWrite(v, 0);
+		delay(500);
+		digitalWrite(v, 1);
+		delay(500);
+		digitalWrite(v, 0);
+		delay(500);
+		digitalWrite(v, 1);
+		delay(500);
+		digitalWrite(v, 0);
+		delay(500);
+		digitalWrite(v, 1);
+		delay(500);
+		digitalWrite(v, 0);
+	}
+\end{lstlisting}
+
+En el bloque de código anterior enciende el LED de color verde y espera durante 5000 milisegundos o 5 segundos para tomar la siguiente acción. Posteriormente procede a apagar el LED verde, esperar medio segundo, volverlo a encender y esperar otro medio segundo. Todo esto toma lugar cinco veces para simular el parpadeo de un semáforo convencional.
+
+A continuación, inmediatamente después de la última vez que el LED verde se apaga, procederemos a encender el LED amarillo para que no exista ninguna inconsistencia y el semáforo funcione de manera adecuada.
+
+\begin{lstlisting}[language=Arduino]
+	digitalWrite(a, 1);
+	delay(1000);
+	digitalWrite(a, 0);
+\end{lstlisting}
+
+La función $delay$ hace esperar al controlador 1 segundo para tomar la siguiente acción que es apagar el LED amarillo, posteriormente se realiza el siguiente bloque de código para encender el LED rojo, dejarlo encendido durante 2 segundos y posteriormente apagarlo.
+
+\begin{lstlisting}[language=Arduino]
+	digitalWrite(r, 1);
+	delay(2000);
+	digitalWrite(r, 0);
+\end{lstlisting}
+
+Y dado el bucle infinito, este programa actuará de esta manera las veces que sean necesarias hasta que se desenergize el circuito.
+
+\subsection*{Diagrama de Flujo}
+Observando el proceso mediante bloques de diagrama de flujo luciría similar a esto:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{flowchart.png}
+	\caption{Proceso del programa elaborado anteriormente.}
+\end{figure}
+
+Como es posible observar, la complejidad del programa ha aumentado un poco, sin embargo sigue siendo bastante lineal y el microcontrolador no toma decisiones en base a otros datos. Podríamos decir que sólo sigue una serie de instrucciones indefinidamente y es por eso que nuestro diagrama de flujo se muestra tan simple.
+
+\subsection*{Código}
+A continuaciön se muestra el código en su totalidad.
+
+\begin{lstlisting}[language=Arduino]
+int v = 13;
+int a = 12;
+int r = 11;
+
+void setup () {
+  pinMode(v, OUTPUT);
+  pinMode(a, OUTPUT);
+  pinMode(r, OUTPUT);
+}
+
+
+void loop () {
+  
+  digitalWrite(v, 1);
+  delay(5000);
+  
+  digitalWrite(v, 0);
+  delay(500);
+  digitalWrite(v, 1);
+  delay(500);
+  digitalWrite(v, 0);
+  delay(500);
+  digitalWrite(v, 1);
+  delay(500);
+  digitalWrite(v, 0);
+  delay(500);
+  digitalWrite(v, 1);
+  delay(500);
+  digitalWrite(v, 0);
+  delay(500);
+  digitalWrite(v, 1);
+  delay(500);
+  digitalWrite(v, 0);
+  delay(500);
+  digitalWrite(v, 1);
+  delay(500);
+  digitalWrite(v, 0);
+  
+  digitalWrite(a, 1);
+  delay(1000);
+  digitalWrite(a, 0);
+  digitalWrite(r, 1);
+  delay(2000);
+  digitalWrite(r, 0);
+  
+}
+
+\end{lstlisting}
+\subsection*{Diagrama Esquemático}
+El diagrama esquemático es bastante parecido al de la práctica \#1, sólo se repite la misma conexión hecha en la conexión \#13, por lo tanto a partir de la conexión 11, 12 y 13 se conectará a cada una, una resistencia de 220 $\Omega$ y un LED de distinto color en serie. Cada una de estas conexiones irá a la referencia para completar el circuito eléctrico.
+
+A continuación se muestra el diagrama esquemático:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{PR2SCH.png}
+	\caption{Diagrama de las conexiones necesarias y componentes utilizados.}
+\end{figure}
+
+\section*{Conclusión}
+
+A través de esta práctica es sencillo entender la lógica detrás del lenguaje de prorgamación Arduino, reforzando lo visto en la práctica anterior. Sin embargo, después de ver los resultados y el código, es posible concluir que es muy poco eficiente y es posible optimizarlo mucho más mediante estructuras de código más complejas como los $if\ statements$ y los bucles.
+\section*{Anexos}
+\subsubsection*{Hexdump}
+\scriptsize
+\verbatiminput{dump.txt}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

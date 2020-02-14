@@ -1,0 +1,155 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{verbatim}
+\input{arduinoLanguage.tex}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Práctica \#1: Introducción al Lenguaje Arduino}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 395}
+\date{Febrero 12, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Instrumenación}
+\lhead{Práctica \#1}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\section*{Introducción}
+El desarrollo de la tecnología ha permitido condensar un gran poder de procesamiento en dispositivos de apenas algunos centímetros. Estos dispositivos en la actualidad se encuentran en la gran mayoría de los electrónicos modernos y nos brindan la posibilidad de obtener cierto comportamiento de nuestros componentes. El \textit{microcontrolador} permite la utilización de sistemas "inteligentes" o, al menos programables.\autocite{upc} Este dispositivo es capaz de toomar decisiones a través de la información que le es otorgada mediante sensores o cualquier dispositivo que sea capaz de enviar datos.
+\section*{Objetivo}
+Familiarizar al estudiante con el entorno de desarrollo de Arduino y su funcionamiento mediante la utilización de un Arduino UNO o similar, un software de simulación y la creación del circuito físico.
+
+\section*{Marco Teórico}
+
+A continuación se presentan algunas definiciones claves que serán de utilidad a medida que continuamos con el reporte:
+\begin{itemize}
+	\item Circuito Integrado: un circuito integrado es una combinación de resistores, capacitores, diodos y transistores, todo dentro de una misma placa y con una conexión dada entre ellos. \autocite{jones20}
+	\item Microcontrolador: se utiliza para el gobierno de uno o varios procesos. En grandes rasgos, son circuitos integrados que son capaces de ejecutar órdenes que fueron grabadas en su memoria.
+	\item Arduino: es un plataforma de electrónicos de uso libre basado en hardware y software fácil de utilizar. Los circuitos Arduino son capaces de mandar y recibir señales I/O para lograr la toma de decisiones y poder realizar distintas funciones.\autocite{ard20}
+	\item EEPROM: por sus siglas en inglés significa Electronically Erasable Programmable Read Only Memory, y, como su nombre lo dice, esta memoria es capaz de reprogramarse para cargar distintos programas y que el comportamiento de nuestro microcontrolador varíe.
+\end{itemize}
+
+\section*{Materiales y Equipo}
+\begin{itemize}
+	\item Arduino UNO
+	\item Arduino IDE
+	\item Proteus 8 Professional
+	\item LEDs (1)
+	\item Resistencia 220 $\Omega$ (1)
+	\item Referencias de internet (StackExchange, Arduino.cc)
+\end{itemize}
+
+\section*{Desarrollo}
+
+Como introducción al lenguaje de programación de Arduino se programará el dispositivo para el encendido y apagado de un Diodo Emisor de Luz (LED), el cual tendrá este comportamiento indefinidamente. Dada la arquitectura del lenguaje de programación de Arduino y la arquitectura del dispositivo, existen tres pasos generales para escribir un programa en Arduino.
+
+El primer paso consiste en definir variables y librerias que se utilizarán dentro de nuestro programa. Éstos darán una funcionalidad mucho mayor al circuito y nos ayudarán a tener un código que sea fácil de mantener.
+
+El segundo paso es donde se definen las entras y salidas del microcontrolador en el circuito del Arduino. Arduino cuenta con un microcontrolador (el ATmega328p) que es capaz de definir sus distintos puntos de acceso como entradas o salidas, las cuales le permiten enviar información o leer información de otros sensores/dispositivos.
+
+Finalmente, después de haber definido variables, librerias y las entras y salidas, podemos proseguir a realizar el programa como tal. En esta sección se le dará la funcionalidad deseada al microcontrolador y se comportará de esta manera de forma indefinida, en un ciclo infinito (por lo menos mientras esté energizado el circuito).
+
+\begin{lstlisting}[language=Arduino]
+	int led = 13;
+\end{lstlisting}
+
+La línea de código anterior representa el primer paso. Dado que nuestro programa es lo suficientemente simple no necesitaremos añadir librerías externas. Sin embagro, la utilización de una variable es bastante útil para asignarle un nombre a uno de los contactos del microcontrolador. Si en algún momento nuestro programa se vuelve bastante complejo y necesitamos modificarlo, es mejor simplemente modificar una variable definida con anterioridad a modificar todo el código subsiguiente. Esto es a lo que se refiere "código mantenible".
+
+
+\begin{lstlisting}[language=Arduino]
+	void setup () {
+		pinMode(led, OUTPUT);
+		}
+\end{lstlisting}
+
+Las siguientes líneas de código representan el paso número dos, donde estamos definiendo el contacto 13 como una salida. Podemos notar que en lugar de utilizar un 13, utilizamos el nombre de la variable como tal. Esto vuelve más amigable el código y fácil de leer.
+
+
+\begin{lstlisting}[language=Arduino]
+	void loop () {
+		digitalWrite(led, 1);
+		delay(1000);
+		digitalWrite(led, 0);
+		delay(1000);
+	}
+\end{lstlisting}
+
+La última parte añadida al código representa el paso número tres, donde se repiten las acciones de manera indefinida. Aquí podemos observar que ordenamos a Arduino a escribir un \textit{1} o un voltaje alto en el pin 13. Después de realizar esto esperamos aproximadamente un segundo y volvemos a realizar el mismo procedimiento, pero esta vez escribiendo una señal de voltaje bajo, o un \textit{0}.
+
+\subsection*{Diagrama de Flujo}
+Observando el proceso mediante bloques de diagrama de flujo luciría similar a esto:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{flowchart.png}
+	\caption{Proceso del programa elaborado anteriormente.}
+\end{figure}
+
+El proceso es bastante sencillo dado que la funcionalidad es bastante limitada, sin embargo, posteriormente con la lectura y escritura de datos y otros elementos añadidos, los diagramas de flujo se volverán una herramienta que nos permitirá visualizar el proceso a gran escala y entenderlo mucho mejor.
+
+\subsection*{Código}
+A continuaciön se muestra el código en su totalidad.
+
+\begin{lstlisting}[language=Arduino]
+	int led = 13;
+	
+	void setup () {
+		pinMode(led, OUTPUT);
+	}
+
+	void loop () {
+		digitalWrite(led, 1);
+		delay(1000);
+		digitalWrite(led, 0);
+		delay(1000);
+	}
+\end{lstlisting}
+\subsection*{Diagrama Esquemático}
+Una vez heco el código y después de haber revisado si existen errores, podemos proceder a la realización del circuito. Dado que nuestro circuito es bastante sencillo, las conexiones también lo serán.
+
+Como se ha expresado en el diagrama de flujo, nuestras conexiones comenzarán desde el circuito del Arduino, específicamente desde el contacto \#13, dado que este contacto lo hemos definido como salida. Desde este contacto obtendremos la señal que viajará a través de un conductor, pasando por el LED y a su vez por una resistencia de 220 $\Omega$ que regula la corriente y evita que nuestros dispositivos se dañen. Esta resistencia estará conectada al nivel de referencia o tierra para completar el circuito y que se genere una corriente eléctrica.
+
+A continuación se muestra el diagrama esquemático:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{PR1SCH.png}
+	\caption{Diagrama de las conexiones necesarias y componentes utilizados.}
+\end{figure}
+
+\section*{Conclusión}
+
+La utilización de los diversos componentes electrónicos en la actualidad es tan amplia que incluso como persona promedio es bastante útil comprenderlos y si es posible modificarlos. Esta práctica demuestra en su mayoría que la manipulación de estos componentes no tiene que ser complicada. Dado el código tan sencillo, se encuentra lo más optimizado posible, lo cual es algo que se busca más y más en los distintos aparatos electrónicos que se diseñan. Para lograr hacerlos más pequeños se necesita aprovechar de manera inteligente la capacidad y memoria de cada uno de los componentes, entonces es absolutamente necesaria la optimizacón del código para disminuir los tiempos de procesamiento.
+
+\section*{Anexos}
+A continuación se presenta el \textit{hexdump} del archivo producido por el ensamblador. Estos archivos hexadecimales son de gran utilidad en programas más complejos para su \textit{debugging}.
+
+\scriptsize
+\verbatiminput{dump2.txt}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

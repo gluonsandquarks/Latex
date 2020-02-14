@@ -15,6 +15,7 @@
 \usepackage{booktabs}
 \usepackage{framed}
 \usepackage{xcolor}
+\usepackage{lmodern}
 \renewcommand{\baselinestretch}{1.5}
 
 % Enlace Bibliografía
@@ -31,30 +32,60 @@
 %\rhead{Carlos Antonio Vásquez Castañeda}
 %\lhead{Tarea \#1}
 \rfoot{\thepage}
-\colorlet{shadecolor}{blue!20}
+\definecolor{title}{RGB}{237, 108, 0}
+\definecolor{subtitle}{RGB}{171, 179, 255}
+\colorlet{shadecolor}{orange!10}
 
 % Inicio del documento
 \begin{document}
 % \maketitle
+{\fontfamily{lmss}\selectfont
 
-
-9 de Febrero de 2020
 \begin{shaded}
-\begin{center}
+
+\begin{flushleft}
+	9 de Febrero de
+\end{flushleft}
+	\begin{flushleft}
+		\vspace{-0.6cm}
+		\hspace{0.8cm}
+		2020
+	\end{flushleft}
+\begin{flushright}
+	\vspace{-2.5cm}
 \section*{Carlos Antonio VÁSQUEZ CASTAÑEDA}
-\end{center}
+\end{flushright}
 \end{shaded}
-\textbf{Dirección:} Priv. Mongolia Poniente \#1437. Fracc. Villanova Diamante, Mexicali, B. C., México.
+Priv. Mongolia Poniente \#1437. Fracc. Villanova Diamante, Mexicali, B. C., México.
 
 (686) 197 - 4145
 
 workflow4granted@gmail.com
 
-\textbf{Objetivos}
+\subsection*{\textcolor{title}{O B J E T I V O S}}
+Ser el más perrón, comer musho y vivir de manera irresponsable. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
 \begin{shaded}
-\textbf{Trayectoria Académica}
+	\vspace{-0.3cm}
+\subsection*{\textcolor{title}{F O R M A C I Ó N \ \ A C A D É M I C A}}
+
+	\textbf{\textcolor{subtitle}{Centro de Bachillerato Tecnológico e Industrial \#21}}
+
+	2017
+
+	Técnico en Laboratorio Clínico
+\end{shaded}
+
+
+\subsection*{\textcolor{title}{C E R T I F I C A C I O N E S}}
+
+
+\begin{shaded}
+	\vspace{-0.3cm}
+	\subsection*{\textcolor{title}{O T R O S \ \ E S T U D I O S}}
+
 \end{shaded}
 %%%%%  Bib
 \renewcommand\refname{References}
 \printbibliography
+}
 \end{document}

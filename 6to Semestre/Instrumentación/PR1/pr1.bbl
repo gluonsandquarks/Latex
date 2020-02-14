@@ -1,0 +1,111 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{ard20}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ee5bced252ab77ec8d633c1afda7c5da}{%
+           family={Arduino},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{fullhash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{bibnamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authorbibnamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authornamehash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \strng{authorfullhash}{ee5bced252ab77ec8d633c1afda7c5da}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What is Arduino?}
+      \field{year}{2020}
+      \verb{urlraw}
+      \verb https://www.arduino.cc/en/Guide/Introduction
+      \endverb
+      \verb{url}
+      \verb https://www.arduino.cc/en/Guide/Introduction
+      \endverb
+    \endentry
+    \entry{upc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d0f442dc80b76b60000d918ff31079fd}{%
+           family={Cartagena},
+           familyi={C\bibinitperiod},
+           given={Universidad\bibnamedelima Politécnica},
+           giveni={U\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{d0f442dc80b76b60000d918ff31079fd}
+      \strng{fullhash}{d0f442dc80b76b60000d918ff31079fd}
+      \strng{bibnamehash}{d0f442dc80b76b60000d918ff31079fd}
+      \strng{authorbibnamehash}{d0f442dc80b76b60000d918ff31079fd}
+      \strng{authornamehash}{d0f442dc80b76b60000d918ff31079fd}
+      \strng{authorfullhash}{d0f442dc80b76b60000d918ff31079fd}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introducción a los Microcontroladores}
+      \verb{urlraw}
+      \verb www.bolanosdj.com.ar/MICRO/INTRODUCMICRCONT.pdf
+      \endverb
+      \verb{url}
+      \verb www.bolanosdj.com.ar/MICRO/INTRODUCMICRCONT.pdf
+      \endverb
+    \endentry
+    \entry{jones20}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9596b9dd588ef1f795957694a2398121}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Scotten\bibnamedelima W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IC Knowledge LLC}%
+      }
+      \strng{namehash}{9596b9dd588ef1f795957694a2398121}
+      \strng{fullhash}{9596b9dd588ef1f795957694a2398121}
+      \strng{bibnamehash}{9596b9dd588ef1f795957694a2398121}
+      \strng{authorbibnamehash}{9596b9dd588ef1f795957694a2398121}
+      \strng{authornamehash}{9596b9dd588ef1f795957694a2398121}
+      \strng{authorfullhash}{9596b9dd588ef1f795957694a2398121}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \true{uniquework}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Introduction to Integrated Circuit Technology}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://www.icknowledge.com/freecontent/Introduction%20to%20IC%20technology%20rev%205.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.icknowledge.com/freecontent/Introduction%20to%20IC%20technology%20rev%205.pdf
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

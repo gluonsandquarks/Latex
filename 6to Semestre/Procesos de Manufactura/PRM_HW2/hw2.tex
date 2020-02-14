@@ -1,0 +1,65 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Tarea \#2: El Avión Supersónico}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 394}
+\date{Febrero 13, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Procesos de Manufactura}
+\lhead{Tarea \#2}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+
+\subsection*{Materiales}
+Dada la aplicación que se le dio al Concorde y a sus altas velocidades, los materiales principales que fueron utilizados son una aleación de aluminio (específicamente el Hidrominium R-58) y titanio para las partes que alcanzaban las mayores temperaturas en el avión.
+
+\subsection*{Mano de Obra}
+La construcción del Concorde es gracias a la alianza de los gobiernos y compañías inglesas y francesas. Específicamente de la British Aircraft Corporation, la Sud Aviation, Air France y la British Overseas Airways Corporations.
+
+\subsection*{Método}
+El método que se siguió, resumido en unos cuantos pasos sencillos fue (1) investigación y recopilación de datos, donde a partir de los diversos estudios generados por los fabricantes para aviones supersónicos de transporte, se llega a la conclusión de que es mucho más conveniente volar a una velocidad constante en el rango de Mach 2 que a una menor a Mach 1.5 o mayor a Mach 3. Posteriormente, mediante estos mismos datos y análisis (2) se eligen los materiales cuyas propiedades son aptas para el desempeño seguro y correcto de la aeronave. Esto considerando que, a pesar de que la opción de volar en un rango de Mach 3 también era viable, resultaba mucho más económico volar en el rango de Mach 2, por lo que estos materiales se han escogido utilizando este factor clave.
+
+\subsection*{Máquinas}
+Las máquinas utilizadas no se han específicado del todo en el documento, sin embargo, dados los fabricantes que se involucraron en el diseño y construcción del Concorde ya eran productores de aviones subsónicos, es posible sugerir que las máquinas utilizadas han sido similares a las que se han utilizado para los aviones subsónicos.
+
+\subsection*{Medición}
+Se realizaron numerosas pruebas y recopilación de datos sobre el desempeño del Concorde, y a su vez se comparó con otros aviones comerciales de la época, principalmente el tiempode vuelo, velocidad y la longitud del vuelo efectuado.
+
+\subsection*{Medio Ambiente}
+Una de las problemáticas del Concorde fue la generación de bangs supersónicos. La diferencia de presión que crean estos aviones al volar es muy grande que se les podía escuchar a grandes distancias. El gran ruido generado por el Concorde limitaba a los fabricantes a generar un avión que volara a grandes alturas, lo cual limitaba el peso de los aviones y afectava de manera negativa el punto de vista económico.
+
+\subsection*{Recursos}
+Para la fabricación de estos aviones, el principal financiamento fue asignado a los gobiernos francés e inglés, gracias a la aliación que existía entre ellos, sin embargo una mínima parte del costo se la dejaron a las empresas mencionadas anteriormente.
+
+\section*{¿En que cambia 50 años después, el desarrollo de un avión supersónico actualizado a nuestros días?}
+Los principales cambios pueden ser que la manufactura de estos aviones resulte mucho más sencilla y eficaz debido a la previa manufactura y datos obtenidos de los fabricantes con anterioridad. Las situaciones sociales y la necesidad de las personas a viajar cada vez más entre países con rapidez se presenta en vigor, lo cual podría ser una necesidad en el mercado donde un avión como el Concorde pudiese satisfacer.
+
+La contaminación sonora es un gran factor que puede frenar la aceptación de un avión como este, y puede que esto limite el éxito de un avión similar al Concorde. La densidad de las poblaciones ha ido aumentando y las regulaciones son cada día más estrictas, así que ese campo puede ser difícil de satisfacer.
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}
