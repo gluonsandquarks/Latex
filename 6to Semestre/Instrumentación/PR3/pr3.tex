@@ -1,0 +1,162 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{verbatim}
+\input{arduinoLanguage.tex}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Práctica \#3: Utilización de las Entradas Analógicas}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 395}
+\date{Febrero 19, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Instrumenación}
+\lhead{Práctica \#3}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\section*{Introducción}
+La lectura de datos es una parte importante del control e instrumentación. Estos datos nos darán la posibilidad de, entre muchas otras cosas, obtener información sobre el estado de una variable medida y sobre el sistema en general. Dependiendo de la aplicación que estemos buscando que nuestro sistema lleve acabo, podremos manipular estas lecturas y establecer parámetros que dependan de esta variable. Así obtener disposiivos que cumplan ciertas características.
+
+\section*{Objetivo}
+Familiarizar al alumno con la lectura analógica de Arduino, su conversión y manipulación final de los datos obtenidos. Como resultado final se espera un LED que desempeñe un parpadeo y la frecuencia de parpadeo sea controlada a través de un potenciómetro.
+
+\section*{Marco Teórico}
+Arduino utiliza el microcontrolador ATmega328p, el cual, entre muchas funciones y módulos, tiene un convertidor análogo a digital que se encarga de, como su nombre lo describe, convertir las lecturas análogas de voltaje a niveles de referencia digitales. Este proceso es explicado mediante la siguiente imagen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{analogtodigital.png}
+	\caption{Conversión analógica a digital.}
+\end{figure}
+
+Gracias a la teória de muestreo y los trabajos hechos por Nyquist y otros podemos realizar estas conversiones digitales. Lo que sucede en la etapa 1 es la lectura de la señal analógica continua, a la cual se hacen muestreos. Se lee cierto valor en periodo de tiempo determinado y éste valor es constante hasta que se vuelva a realizar la siguiente conversión. Entre más rápida sea la lectura más suave lucirá la curva que fue muestreada. Esta curva después se discretiza y se le asignan valores especíicos a cada nivel para utilizarlos como una cascada continua de datos o almacenarlos en una estructura parecida a vectores.
+
+Al leer las lecturas analógicas por sí solas, podemos notar que, por lo menos con Arduino, obtenemos valores de 0 a 1023. Esto es porque el convertidos analógico a digital de Arduino es de 10 bits, lo cual significa que tiene $2^{10} = 1024$ posibles niveles para representar una señal, donde 0 es el más bajo y 2013 es el más alto.
+
+\section*{Materiales y Equipo}
+\begin{itemize}
+	\item Arduino UNO
+	\item Arduino IDE
+	\item Proteus 8 Professional
+	\item Potenciómetro (1)
+	\item LEDs (1)
+	\item Resistencia 220 $\Omega$ (1)
+	\item Referencias de internet (StackExchange, Arduino.cc)
+\end{itemize}
+
+\section*{Desarrollo}
+El código para esta práctica es muy sencillo dado que sólo utilizaremos una sola entrada analógica para la lectura de datos. Después de haber entendido la manera en la que Arduino lee los voltajes analógicos y realiza la discretización de los datos, podemos notar que estos valores tomarán un rango de 0 a 1023. Así sabremos qué podemos esperar como valor numérico en nuestra variable. Antes de manipular esta variable, debemos comenzar el programa como tal mediante lo que ya hemos aprendido en prácticas anteriores.
+
+\begin{lstlisting}[language=Arduino]
+	int led = 13;
+	float freq;
+\end{lstlisting}
+
+Hemos asignado la variable $led$ al contacto 13, el cual enviará la señal al LED físico. Posteriormente hemos creado una variable vacía cuyo nombre hemos asignado como $freq$, ya que nos permitirá modular la frecuencia de parpadeo de nuestro LED dependiendo del voltaje que sea registrado por Arduino.
+
+\begin{lstlisting}[language=Arduino]
+	void setup() {
+		pinMode(led, OUTPUT);
+		pinMode(A0, INPUT);
+		Serial.begin(9600);
+		}
+\end{lstlisting}
+
+En el anterior bloque de código hemos asignado las salidas y entradas del sispositivo. Como dijimos antes, la variable LED se encarga de salvar el número de conexión donde estará nuestro LED conectado. Arduino cuenta con 5 entradas analógicas, cuyos nombres van de A0 a A5. Hemos elegido la entrada A0 para realizar la lectura por simple conveniencia y la hemos asignado como entrada mediante la palabra $INPUT$. La última línea de código es para activar el monitor serial de Arduino que utilizaremos en el proceso de $debugging$.
+
+\begin{lstlisting}[language=Arduino]
+	void loop() {
+		freq = analogRead(A0);
+		freq = 5000*(freq/1023);
+		Serial.println(freq);
+		digitalWrite(led, 1);
+		delay(freq);
+		digitalWrite(led, 0);
+		delay(freq);
+		}
+\end{lstlisting}
+
+Este último bloque de código es la lógica del programa. Como primer paso realizamos la lectura analógica en la conexión donde $A0$ se encuentra. Después hacemos una pequeña conversión en la línea 3. Esta conversión es para, en vez de obtener un valor que sea de 0 a 1023. obtendremos un valor que sea de 0 a 5000. Para lograr esto, el valor de $freq$ lo dividimos entre 1023, ya que $freq$ sólo arrojará valores entre 0 y 1023, esta división nos otorgará siempre un número entre 0 y 1, análogo a un porcentaje. Este valor lo multiplicamos por 5000 para siempre obtener un número proporcional a la intensidad que estemos modulando y que se encuentre entre el rango deseado.
+
+Después en la línea 4 se imprime el valor de $freq$ al monitor serial sólo para la corroboración de que los datos sean los correctos. Finalmente las líneas 5 a 8 se encargan de realizar el parpadeo del LED. Como podemos ver, existe un $delay$, cuyo tiempo de espera está siendo modulado por la variable $freq$. Dado que la función $delay$ acepta valores en milisegundos, nuestro LED siempre parpadeará como máximo cada 5 segundos, y como mínimo en unos cuantos microsegundos. Es así como hemos manipulado la lectura anlógica de un potenciómetro para lograr modular la frecuencia de parpadeo de un LED.
+
+\subsection*{Diagrama de Flujo}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{flowchart.png}
+	\caption{Diagrama de flujo del proceso.}
+\end{figure}
+
+\subsection*{Código}
+
+\begin{lstlisting}[language=Arduino]
+	int led = 13;
+	float freq;
+
+	void setup() {
+		pinMode(led, OUTPUT);
+		pinMode(A0, INPUT);
+		Serial.begin(9600);
+		}
+
+	void loop() {
+		freq = analogRead(A0);
+		freq = 5000*(freq/1023);
+		Serial.println(freq);
+		digitalWrite(led, 1);
+		delay(freq);
+		digitalWrite(led, 0);
+		delay(freq);
+		}
+\end{lstlisting}
+
+\subsection*{Diagrama Esquemático}
+
+A continuación se muestra el diagrama esquemático:
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{PR3SCH.png}
+	\caption{Esquema de la práctica.}
+\end{figure}
+
+\section*{Conclusión}
+
+La práctica anterior, a pesar de ser bastante sencilla, demuestra un concepto fundamental de la instrumentación. Uno de los principales objetivos es leer las variables que se miden y todas éstas llegan como simples variaciones de voltaje, en veces milivolts. Ser capaz de utilizar estas señales permite que nuestros dispositivos funcionen de la manera que nosotros deseamos.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{1.jpg}
+	\caption{Construcción física del circuito.}
+\end{figure}
+
+\section*{Hexdump}
+A continuación se presenta el \textit{hexdump} del archivo producido por el ensamblador. Estos archivos hexadecimales son de gran utilidad en programas más complejos para su \textit{debugging}.
+
+\scriptsize
+\verbatiminput{dump.txt}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}
