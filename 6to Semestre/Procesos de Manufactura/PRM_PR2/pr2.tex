@@ -1,0 +1,63 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Práctica \#2: Fábrica de Aviones}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 394}
+\date{Marzo 11, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Procesos de Manufactura}
+\lhead{Práctica \#2}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+	\item ¿Cuál es la finalidad de la operación de SMT?
+	\item ¿Qué material de tipo directo entra como insumo a esta operación?
+	\item ¿Qué material de tipo indirecto entra en esta operación?
+	\item ¿Cuáles son las máquinas relacionadas con esta operación?
+	\item ¿Cuál es el tipo de instalaciones que necesitan dichas máquinas para operar?
+	\item ¿Cuáles son las refacciones o partes con mayor frecuencia de cambio por desgaste u obsolescencia en estas máquinas?
+	\item ¿Cuántas máquinas de montaje de componentes observo y cuáles son sus diferencias?
+	\item ¿Qué materiales se utilizan en estos sistemas?
+	\item ¿Cuáles son los elementos que determinan la disponibilidad de una máquina?
+	\item ¿Cuáles considera los elementos del mayor tiempo de ajuste o "set up" en cambio de material?
+	\item ¿Cuál es el flujo del material en esta operación?
+	\item ¿Qué equipos se utilizan para el manejo y transporte de materiales?
+	\item ¿Qué auditorías son realizadas para asegurar la calidad en esta operación?
+	\item ¿Cuáles son los principales defectos del producto o fallas originadas en esta operación y cuáles son sus posibles causas?
+	\item ¿Cuándo se rechaza el material?
+	\item ¿Cuántas personas apoyan el área directamente? ¿De qué departamentos?
+	\item ¿Cuál es la relación de dichas personas con este departamento?
+	\item ¿Cuál es el mínimo "rendimiento" esperado?
+	\item ¿Cuántos operadores se necesitan para trabajar en equipo?
+	\item ¿Cuáles son las salidas de esta operación considerando desechos o desperdicios?
+\end{enumerate}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

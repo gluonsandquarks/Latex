@@ -1,0 +1,177 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{verbatim}
+\input{arduinoLanguage.tex}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Práctica \#5: Intensidad de Luminosidad de un LED y Uso del Monito Serial}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 395}
+\date{Marzo 11, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Instrumenación}
+\lhead{Práctica \#5}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\section*{Introducción}
+El control de estructuras electrónicas analógicas es esencial para el funcionamiento d sistemas eléctricos y electrónicas más complejos y que cumplan con una funcionalidad mucho más compleja. Esta es la razón principal por la cual es necesario familirizarse con los distintos sensores analógicos. Los potenciómetros son altamente utilizados aunque no cumplen precisamente como un sensor, sino más bien como un controlador con más opciones que un interruptor. En esta práctica analizaremos una fotoresistencia como sensor de luminosidad y con esto controlar el LED con el que contábamos.
+
+\section*{Objetivo}
+Familiarizar al alumno con otros tipos de sensores analógicos, en específico una fotoresistencia o LDR.
+
+\section*{Marco Teórico}
+
+La foto resistencia LDR es un componente cuya resistencia varía snesiblemente con la cantidad de luz percibida. La relación entre la intensidad lumínica y el valor de la resistencia no es lineal. Se utiliza ampliamente para medir la iluminación en dispositivos electrónicos que requieren un precio agresivo. Su comportamiento es el siguiente: mayor luminosidad = menor resistencia eléctrica. y viceversa.
+
+Por lo regular se conecta en serie con una resistencia de valor fijo y se utiliza un divisor de voltaje (en el nodo donde se hayan ambas resistencias conectadas) para variar el voltaje y así que la lectura analógica sea registrada dependiendo del valor de la resistencia en cuestión.
+
+\section*{Materiales y Equipo}
+\begin{itemize}
+	\item Arduino UNO
+	\item Arduino IDE
+	\item Proteus 8 Professional
+	\item Fotoresistencia [LDR] (1)
+	\item LEDs (1)
+	\item Resistencia 220 $\Omega$ (1)
+	\item Referencias de internet (StackExchange, Arduino.cc)
+\end{itemize}
+
+\section*{Desarrollo}
+
+Similar a la práctica anterior donde utilizábamos un potenciómetro para controlar la intensidad de luz que emitía el LED, utilizaremos la fotoresistencia para controlar la luminosidad del LED. Dada la conexión del circuito, es posible obtener un divisor de voltaje, por lo que podremos medir este voltaje de manera digital con valores de 0 a 1023. 
+
+De esta manera definimos las primeras variables y realizamos el setup de nuestro programa.
+
+\begin{lstlisting}[language=Arduino]
+int led = 11;
+float freq;
+float freq1;
+float volt;
+float lum;
+
+void setup() {
+  pinMode(led, OUTPUT);
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+  Serial.println("RAW   VOLT   %LuM");
+}
+\end{lstlisting}
+
+En el bloque de código anterior suceden bastantes procesos. Primero se definen la salida analógica, la entrada analógica y se comienza la comunicación serial a 9600 baudios. Una vez iniciado el monitor serial, se procede a hacer la impresión de las columnas, en la primera aparecen los datos crudos de la lectura, posteriormente se convierten estos datos a voltaje y después se muestra el porcentaje de luminosidad.
+
+El ciclo del programa es bastante similar al de la práctica anterior, sin embargo se realizan las conversiones de voltaje y de porcentaje, como se muestran en las siguientes líneas de código:
+
+\begin{lstlisting}[language=Arduino]
+void loop() { 
+  freq = analogRead(A0);
+  volt = 5*(freq/1023);
+  lum = 100*(freq/1023);
+  freq1 = 254*(freq/1023);
+  //freq = 5000*(freq/1023); 
+  Serial.print(freq);
+  Serial.print("   ");
+  Serial.print(volt);
+  Serial.print("   ");
+  Serial.print(lum);
+  Serial.print("%");
+  Serial.println();
+
+  analogWrite(led, freq1);
+  //delay(freq);
+  //analogWrite(led, freq1);
+  //delay(freq);
+}
+\end{lstlisting}
+
+Así la intensidad del LED es controlada totalmente por el valor del voltaje en la resistencia, y con este valor es posible hacer los cálculos matemáticos para obtener los valores necesarios en el monitor serial. 
+
+\subsection*{Código}
+
+\begin{lstlisting}[language=Arduino]
+int led = 11;
+float freq;
+float freq1;
+float volt;
+float lum;
+
+void setup() {
+  pinMode(led, OUTPUT);
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+  Serial.println("RAW   VOLT   %LuM");
+}
+
+void loop() { 
+  freq = analogRead(A0);
+  volt = 5*(freq/1023);
+  lum = 100*(freq/1023);
+  freq1 = 254*(freq/1023);
+  //freq = 5000*(freq/1023); 
+  Serial.print(freq);
+  Serial.print("   ");
+  Serial.print(volt);
+  Serial.print("   ");
+  Serial.print(lum);
+  Serial.print("%");
+  Serial.println();
+
+  analogWrite(led, freq1);
+  //delay(freq);
+  //analogWrite(led, freq1);
+  //delay(freq);
+}
+
+\end{lstlisting}
+
+\subsection*{Diagrama Esquemático}
+
+A continuación se muestra el diagrama esquemático:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{PR5SCH.png}
+	\caption{Diagrama del circuito realizado.}
+\end{figure}
+
+\section*{Conclusión}
+La utilización de esta salidas analógicas permiten un control mucho más amplio de los dispositivos que se comunican con Arduino. En ocasiones será más útil contar con un control puramente digital, pero en otras cuestiones será de gran utilidad contar con la posibilidad de simular los voltajes analógicos y lograr hacer que éstos varíen. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{bredboard.jpg}
+	\caption{Circuito físico en protoboard.}
+\end{figure}
+
+\section*{Hexdump}
+A continuación se presenta el \textit{hexdump} del archivo producido por el ensamblador. Estos archivos hexadecimales son de gran utilidad en programas más complejos para su \textit{debugging}.
+
+\scriptsize
+\verbatiminput{dump.txt}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

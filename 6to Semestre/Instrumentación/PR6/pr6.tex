@@ -1,0 +1,198 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{verbatim}
+\input{arduinoLanguage.tex}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Práctica \#6: Pantalla LCD 16$\times$2}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 395}
+\date{Marzo 25, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Instrumenación}
+\lhead{Práctica \#6}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\section*{Introducción}
+
+La manipulación de distintos tipos de datos es de gran importancia en la manipulación de programas y electrónicos modernos. Uno de estos tipos de datos es el tipo $String$, el cual es una colección de caracteres que pueden ser utilizados de distintas maneras. La que principalmente se viene a la mente es la de desplegar información importante o de interés en una consola o pantalla/display.
+
+Además de este tipo de dato, también es importante familiarizarse con los datos tipo $byte$ para una manipulación más precisa de los dispositivos que hemos de utilizar. En esta ocasión manipularemos una pantalla LCD de 16$\times$2 caracteres.
+
+\section*{Objetivo}
+\begin{itemize}
+	\item Desarrollar un programa y circuito capaz de manipular una pantalla LCD. 
+
+	\item Generar caracteres especiales para su posterior utilización a través de las variables tipo $byte$.
+\end{itemize}
+
+\section*{Marco Teórico}
+
+El módulo LCD puede ser utilizado de distintas maneras, y sea cual sea la utilidad que le demos, es necesario comprender para qué funcionan las conexiones que tiene el módulo.
+
+A continuación discutimos estas conexionas y una breve explicación de su funcionalidad.
+
+\begin{itemize}
+	\item Ground (VSS / GND): Este pin es donde se encontrará la referencia.
+		
+	\item Supply Voltage (VCC / VDD): Este pin es el que recibe la corriente de alimentación, generalmente de 5V pero acepta entre 4.7V y 5.3V. Esta coriente alimentará el circuito interno de la pantalla LCD.
+
+	\item Ajuste de Contraste (VO / VEE): Este pin se encarga de ajustar el contraste de los caracteres en pantalla mediante un voltaje regulado. Es posible conectar una resistencia variable para tener control sobre el contraste de la pantalla LCD.
+
+	\item Selector de Registro (RS): Las computadoras y dispositivos electrónicos con funcionalidades un poco más complejas cuentan con pequeños módulos llamados "registros", que son a grandes rasgos memorias de alta velocidad con ciertos comandos o información capaz de ser leída o modificada. El módulo LCD cuenta con dos registros principales de donde es posible obtener información: el registro de comandos (LOW) y el registro de datos (HIGH). El registro de comandos contiene comandos que se pueden acceder para borrar el display, ubicar el cursor en alguna celda dada, etcétera. Mientras tanto, el registro de datos es donde mandamos aquellos caracteres para mostrar en el display. Este registro lo manipula Arduino de manera automática para poder utilizar ambas funcionalidades de manera sencilla y rápida.
+
+	\item Lectura y Escritura ($R/\overline{W}$): Este pin selecciona si leemos o escribimos información en la pantalla LCD. Para esta aplicación, este pin siempre se mantendrá conectado a tierra debido a que sólo nos interesa mandar información (el modo lectura).
+
+	\item Enable (E): Este pin se encarga de recibir un pulso (de almenos 450 ns) cuando se recibe información en los pins de datos. Sin este pulso, el módulo LCD recibirá la señal pero no la guardará en memoria y no será capaz de pasar esta información a RAM.
+
+	\item D0 - D7: Estos pins son los pins de datos donde se obtendrá información en 8 bits. Es posible también sólo utilizar 4 pins y realizar la comunicación utilizando 4 bits.
+
+	\item Ánodo (A / LED+): Algunos módulos LCD cuentan con una luz LED que permite iluminar la pantalla para mejorar la visibilidad, en lugar de necesitar una fuente de luz que caiga sobre la pantalla. Este es el ánodo del LED que se encarga de esto, y no es necesario conectar en serie una resistencia reguladora de corriente porque la mayoría de los módulos LCD ya cuentan con una resistencia reguladora en esta conexión.
+
+	\item Cátodo (K / LED-): Conexión negativa del LED que ilumina la pantalla. Va directo a GND.
+\end{itemize}
+
+Debido a que no trabajaremos con programación de bajo nivel ni microprocesadores como tal, no es necesario conocer los comandos más utilizados en el registro de comandos del módulo LCD, sin embargo, ya que utilizaremos Arduino, es útil conocer la librería $LiquidCrystal$. Esta librería se encarga de la manipulación de las conexiones más técnicas como RS, E y D0 a D7, por lo que es muy útil para realizar pruebas rápidas. Ya cuenta con distintas funciones, desde la manipulación del cursor con el que cuenta el módulo hasta un despliegue básico de frases, entre otras.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{lcd.jpg}
+	\caption{Conexiones estándar del módulo LCD 16$\times$2.}
+\end{figure}
+
+\section*{Materiales y Equipo}
+\begin{itemize}
+	\item Arduino UNO
+	\item Arduino IDE
+	\item Proteus 8 Professional
+	\item Potenciómetro (1)
+	\item Pantalla LCD 16$\times$2 (1)
+	\item Referencias de internet (StackExchange, Arduino.cc)
+\end{itemize}
+
+\section*{Desarrollo}
+
+Como primer paso es necesario declarar variables y librerias a utilizar, como se muestra a continuación.
+\begin{lstlisting}[language=Arduino]
+	#include <LiquidCrystal.h>
+	LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+	byte o[7] = {B00010, B00100, B00000, B01110, B10001, B10001, B01110};
+\end{lstlisting}
+
+En la primer línea de código se incluye la librería LiquidCrystal y posteriormente en la segunda línea se muestra cómo se ha configurado la pantalla LCD. Esa línea es donde se definen los pins que utilizaremos en Arduino para RS, E, D4, D5, D6 y D7 respectivamente.
+
+Por último, en la tercer línea de código se define un arreglo de bytes. Cada byte representa un renglón de pixeles que se encuentran en cada celda. Esto nos permite editar directamente los pixeles para lograr poner cualquier gráfico que podamos realizar. En nuestro caso hemos definido este arreglo para mostrar una o minúscula con tilde.
+
+\begin{lstlisting}[language=Arduino]
+	void setup() {
+	 lcd.begin(16, 2);
+ 	 lcd.createChar(0, o);
+}
+
+\end{lstlisting}
+
+Las últimas línea de código  definen el tamaño de la pantalla y el caracter especial que hemos definido a través del arreglo de bytes dados.
+
+\begin{lstlisting}[language=Arduino]
+void loop() { 
+  for (int positionCounter = 0; positionCounter < 20; positionCounter++) {
+    lcd.setCursor(positionCounter - 20, 0);
+    lcd.print("Universidad Aut");
+    lcd.write(byte(0));
+    lcd.print("noma");
+    lcd.setCursor((10 - positionCounter), 1);
+    lcd.print("de Baja California");
+    delay(150);
+    lcd.clear();
+  }
+}
+\end{lstlisting}
+
+Aquí es donde el programa como tal toma forma. Es muy sencillo imprimir texto en la pantalla con el método $lcd.print();$, sin embargo queremos lograr que el texto en el primer renglón de la pantalla se mueva hacia un lado y el segundo renglón se mueva hacia el otro, de manera que sea más dinámico el mensaje mostrado en pantalla. Para esto se utiliza el método $lcd.setCursor();$, el cual se encarga de determinar desde qué celda se escribirá el mensaje siguiente.
+
+Al colocar todo dentro de un ciclo es posible reescribir el mensaje varias veces en distintas posiciones para así crear la ilusión de animación. Sólo se deben animar por separado estas dos líneas y es todo lo necesario para realizar este efecto.
+
+\subsection*{Código}
+
+\begin{lstlisting}[language=Arduino]
+//Practica #3
+//LCD
+
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+byte o[7] = {B00010, B00100, B00000, B01110, B10001, B10001, B01110};
+
+void setup() {
+  lcd.begin(16, 2);
+  lcd.createChar(0, o);
+}
+
+void loop() {
+  
+  for (int positionCounter = 0; positionCounter < 20; positionCounter++) {
+    lcd.setCursor(positionCounter - 20, 0);
+    lcd.print("Universidad Aut");
+    lcd.write(byte(0));
+    lcd.print("noma");
+    lcd.setCursor((10 - positionCounter), 1);
+    lcd.print("de Baja California");
+    delay(150);
+    lcd.clear();
+  }
+  
+}
+\end{lstlisting}
+
+\subsection*{Diagrama Esquemático}
+
+A continuación se muestra el diagrama esquemático:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{PR6SCH.png}
+	\caption{Diagrama esquemático de las conexiones.}
+\end{figure}
+
+\section*{Conclusión}
+Manipular este tipo de datos en muchas ocasiones requiere del uso de estructuras de código más complejas como los ciclos y arreglos o vectores. La pantalla LCD con las librerías utilizadas no necesita código tan sofisticado, sin embargo es bueno intentar entender estas estructuras y el funcionamiento de los módulos a utilizar con Arduino.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{sentaodenoica.png}
+	\caption{Circuito físico.}
+\end{figure}
+\section*{Hexdump}
+A continuación se presenta el \textit{hexdump} del archivo producido por el ensamblador. Estos archivos hexadecimales son de gran utilidad en programas más complejos para su \textit{debugging}.
+
+\scriptsize
+\verbatiminput{dump.txt}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

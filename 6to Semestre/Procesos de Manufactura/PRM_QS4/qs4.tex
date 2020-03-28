@@ -1,0 +1,123 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Cuestionario \#4: Términos y Definiciones de La Meta}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 394}
+\date{Marzo 16, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Procesos de Manufactura}
+\lhead{Cuestionario \#4}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+	\item ¿Cuál es La Meta de cualquier Empresa?
+
+		Según Goldratt, la meta de cualquier empresa es generar capital ahora y en el futuro.
+
+	\item ¿Qué es y cómo están relacionados troughput e inventario?
+
+		El throughput es la velocidad de producción. Con un throughput más alto se corre el riesgo de necesitar más inventario para el almacenamiento de productos en proceso o terminados, por lo que se busca es el balance de estos dos para optimizar los costos de la empresa. Estas dos variables son parte de los tres principales parámetros que se deben de controlar en una empresa.
+
+	\item ¿Es posible reducir el inventario y mejorar las entregas al mismo tiempo?
+
+		Sí, aumentando la productividad global de la planta es posible disminuir el inventario y aumentar las entregas, disminuyendo las restricciones que están en el sistema.
+
+	\item Definir Sucesos Dependientes.
+
+		Un proceso o una serie de ellos ha de tener lugar antes de que otro pueda producirse; el suceso siguiente depende del que le precedió.
+
+	\item ¿Por qué se dice que las fluctuaciones en el proceso de producción no se compensan con el tiempo, sino que se acumulan?
+
+		Porque los procesos se afectan entre sí, entonces aisladamente cada proceso puede recuperarse, sin embargo cuando los procesos son dependientes de los otros, significa que estas fluctuaciones se propagan a través de ellos, dando muchas más irregularidades y acumulándose a lo largo del proceso global.
+
+	\item Definir capacidad potencial máxima.
+
+		Es la máxima salida de producción que una empresa es capaz de sostener idealmente.
+
+	\item ¿Qué es un cuello de botella? ¿Cómo resolver los cuellos de botella?
+
+		Son limitaciones en la producción de un producto que marcan el ritmo de la producción. Para resolverlos se necesita identificar el cuello de botella y hacer lo que se pueda para volverlo más rápido. Un buen método es poner el proceso identificado como cuello de botella (de ser posible) al inicio del proceso global de producción. También se busca eliminar el cuello de botella completamente actúando sobre las ineficiencias, reduciendo tiempos de cambio, evitar que pasen defectos, buscar otras máquinas, etc. 
+
+	\item ¿Es posible programar la producción para aumentar la entrega a tiempo de los pedidos?
+
+		Se podría realizar un modelo simplificado para programar la producción, pero habiendo tantas variables que influyen en la producción, es casi imposible medirlas todas.
+
+	\item ¿Qué efecto ocasiona la sobreproducción?
+
+		Pérdidas en las utilidades de una empresa; si se sobreproduce un producto en proceso esto da lugar a un aumento en el inventario ya que la capacidad de las máquinas o procesos subyacentes a éste sería rebasada por la limitación de la máquina en cuestión. Y globalmente, si la demanda en el merca es más baja de lo que se ha producido sólo habrá productos listos que no se han entregado a la clientela, renderizándolos inútiles y como pérdidas globales. En cualquiera de los casos, hay utilidades perdidas.
+
+	\item ¿Qué efecto en la producción ocasiona el tamaño de lote?
+
+		Afecta al flujo de producción, si es muy grande se verá afectado por el cuello de botella.
+
+	\item ¿Qué factores permiten reducir los ciclos de fabricación?
+
+		El tamaño de lote ya que influye en el tiempo de proceso del lote, lo cual significa reducciones en esperas y eso reduce el tiempo total que pasa el material en la fábrica, lo cual reduce los ciclos de fabricación. Con ciclos más cortos, los clientes reciben antes sus pedidos.
+
+	\item ¿Qué pasos seguir para asegurar la mejora continua en la manufactura?
+
+		Identificar la limitación (cuello de botella), decidir cómo explotar esta restricción, subordinar todo a la decisión anterior, elevar la limitación y si se ha eliminado la restricción, volver al primer paso.
+
+	\item ¿Cómo se define la eficiencia en la manufactura en La Meta?
+
+		Reducir tiempos de producción, explotar los cuellos de botella y producir la cantidad adecuada de productos con la menor cantidad de recursos.
+
+	\item ¿Qué significa que “no se debe equilibrar la capacidad productiva sino el flujo de producción”?
+
+		Significa que se debe equilibrar el flujo de materiales con la demanda del mercado.
+
+	\item ¿Qué significa que “la utilización y la actividad de un recurso no son la misma cosa”?
+
+		La utlización sólo implica que los recursos se mantendrán realizando algún tipo de proceso, pero no necesariamente aportarán resultados positivos a la empres. Por otro lado, un recurso activo mostrará la capacidad de utilidades a una empresa.
+
+	\item ¿Por qué los CB son los que marcan el ritmo de producción?
+
+		Porque son aquellos procesos en donde toma más tiempo finalizarlos, por tanto, los procesos anteriores pueden ser altamente eficientes y rápidos pero si el cuello de botella limita el proceso global no tendrá sentido aumentar el ritmo de producción anterior al cuello de botella.
+
+	\item ¿Por qué los CB rigen el inventario y la facturación del sistema?
+
+		Porque si se llega a producir mucho más que aquello con lo que puede lidiar el cuello de botella, aumentará el producto en proceso en los inventarios dado que el cuello de botella seguirá trabajando al mismo ritmo incluso si los procesos anteriores son de lo más eficiente. Esto sólo generaría pérdida en las utilidades en los costes de inventario.
+
+	\item Definir lote de transferencia, lote de proceso y lote económico.
+
+		El \textbf{lote de procesos} es lo que produce un centro de trabajo entre dos preparaciones seguidas, suele ser de tamaño amplio, para evitar las paradas de setup de máquinas que son grandes. El \textbf{lote de transferencia} es la cantidad que se transporta de un puesto a otro de trabajo. El \textbf{lote económico} es un lote basado en datos fijos, sin tomar en cuenta las fluctuaciones que puedan ocurrir. 
+
+	\item ¿Cómo debe ser el control de calidad según La Meta?
+
+		Debe de efectuarse antes del cuello de botella, asegurándose que sólo pasen piezas de toda calidad, eliminando con anterioridad las defectuosas. Una pieza desechada tras pasar por un cuello de botella es tiempo perdido, pero antes no.
+
+	\item ¿Por qué no trabajar el sistema a su máxima capacidad?
+
+		Porque se debe estudiar el mercado y la demanda del producto. Se puede tener un sistema a máxima capacidad, sin embargo contaríamos con muchos productos lo cual reduciría la oportunidad de reducir los gastos de operación.
+
+\end{enumerate}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

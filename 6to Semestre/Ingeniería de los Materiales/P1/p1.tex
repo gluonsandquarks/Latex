@@ -1,0 +1,97 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{verbatim}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa]{biblatex}
+\addbibresource{~/referencias.bib}
+
+% Titulo, autores, fecha.
+\title{P.1: Iniciativa Aeroespacial y ODS}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 399}
+\date{Marzo 27, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Ingeniería de los Materiales}
+\lhead{Avance \#1}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\section*{Introducción}
+
+Los objetivos de desarrollo sustentable (ODS, también conocidos como SDG por sus siglas en inglés) son llamados de acción mundial que emiten los países para promover la prosperidad mientras protejen al planeta. \parencite{un2020}
+
+Estos objetivos son la base para lograr un futuro mejor para todo el mundo. Hacen referencia a los retos globales a los qu enos enfrentamos, incluyendo aquellos relacionados con la pobreza, desigualdad, cambio climático, degradación ambiental, paz y justicia. En total son 17 metas y se espera lograrlas para el año 2030. A continuación se enumeran las metas de acuerdo al sitio web de las Naciones Unidas.
+
+\begin{enumerate}
+	\item No pobreza.
+	\item Cero hambre.
+	\item Buena salud y bienestar.
+	\item Educación de calidad.
+	\item Igualdad de género.
+	\item Agua limpia y saneamiento.
+	\item Energía limpia y asequible.
+	\item Trabajo decente y crecimiento económico.
+	\item Industria, inovación e infraestructura.
+	\item Desigualdad reducida.
+	\item Ciudades y comunidades sustentables.
+	\item Consumo y producción responsable.
+	\item Acción climática.
+	\item Vida debajo del agua.
+	\item Vida en tierra.
+	\item Paz, justicia e instituciones fuertes.
+	\item Camaradería.
+\end{enumerate}
+
+\section*{Proyectos Aeroespaciales Sustentables}
+
+La tecnología aeroespacial se ha mantenido actualizada y en la industria se busca constantemente el desarrollo de materiales y manufactura más sofisticada. Los últimos años ha existido una gran oleada de concientización sobre la sustentabilidad de los proyectos y productos llevados a cabo en la industria aeroespacial, teniendo en mente algunas de las metas planteadas por las naciones unidas. He aquí algunos de los proyectos relacionados.
+
+\subsection*{MAPTIS}
+
+El sistema de información sobre materiales y procesos técnicos (MAPTIS por sus siglas en inglés) de la NASA tiene como objetivo proveer una fuente base que contenga propiedades de materiales para la NASA y asociados de la NASA. Contiene propiedades físicas, mecánicas y ambientales para materiales metálicos y no metálicos. Esta herramienta es muy útil para ingenieros de diseño y un componente muy importante que provee MAPTIS es el de información sobre seguridad y salud ambiental (Environmental-Safety-Health (ESH) information) de materiales regulados, más notablemente aquellos materiales regulados por REACH de la Unión Europea. 
+
+El componente ESH de MAPTIS es una heramienta que permite desarrollar diseños para prevenir la contaminación. Lo que hace a MAPTIS tan útil es la capacidad de la base de datos para encontrar los materiales y procesos de manufactura adecuados que nos proporcionen el rendimiento apropiado para las aplicaciones que se necesitan de manera que no pongan en pelibro a los humanos ni al planeta. Lo hace de varias maneras, pero una de ellas es el Lifecycle Management (PLM) que se encarga de diseñar la vida de producto incluso después de haber cumplido con su vida útil. \parencite{isamu11} simon 
+
+\subsection*{Superbus}
+
+El Superbus es una alternativa de transporte a alta velocidad desarrollado en Países Bajos por TU Delft. Consiste en u vehículo que se conduce en una autopista de alta velocidad para uso en el transporte público, junto con la infraestructura de alta velocidad y el sistema avanzado de logística que requiere su operación. 
+
+Quizá no sea obvio lo relacionado que está este proyecto con la industria aeroespacial, sin embargo es hasta que analizamos el desarrollo del prototipo del Superbus que nos es posible comprender la relación que se tiene en el sector. La idea básica de proyecto era desarrollar este vehículo utilizando tecnología aeroespacial para disminuir el impacto ambiental de transporte de alta velocidad. El diseño del Superbus le permitía viajar a una velocidad máxima de 250 km/h, utilizando la misma potencia que la que utilizaría un autobus ya existente a 100 km/h. Esto es logrado eliminando dos fuentes principales de arrastre: arrastre aerodinámico y fricción.
+
+El primero se puede reducir considerablemente con un diseño que minimice el área frontal del prototipo. Así, diseñando esta sección transversal y disminuyendo la altura el arrastre se reduce significativamente.
+
+Por otro lado, la fricción es determinada principalmente por el peso del prototipo. Utilizando materiales compuestos y métodos de construcción utilizados en la industria aeroespacial, el peso del vehículo y su fricción pueden ser reducidos.
+
+Este diseño, aunado al uso de carreteras especializadas para el vehículo y la posibilidad de utilizar infraestructura ya construida a velocidades más bajas, reducen el costo del vehículo y su impacto ambiental. \parencite{melkert07}
+
+\section*{Conclusión}
+Existen muchos más proyectos más complejos en la industria aeroespacial que se encargan de distintas alternativas para mejorar le impacto ambiental que se tiene sobre el planeta, se tiene de ejemplo la asociación PAMELA y otros \parencite{sabaghi16}. Los proyectos del futuro van encaminados a una mejora en la manufactura y el diseño debido a las distintas limitaciones de nuestro ambiente y la necesidad de realizar proyectos que perjudiquen en la menor cantidad posible al planeta. 
+
+Posterior a estos proyectos, será necesario buscar desarrollar nuevos diseños e ideas que sean capaces de ayudar y revertir los efectos de contaminación en el mundo mientras desempeñan otras tareas. Estos son las próximas problemáticas que se avecinan y entenderlas nos dará la oportunidad de crear nuevas maneras de ver el trabajo que es realizado día a día, y, a su vez, nos permitirá desarrollar tecnologías más capaces de lidiar con nuestro entorno que cambia indeterminadamente.
+
+%Simo puto, como decía mi compa \textcite{MM} y el bato baboso ese \parencite{Ins}
+
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

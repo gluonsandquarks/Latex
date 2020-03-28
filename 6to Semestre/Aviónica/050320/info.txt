@@ -1,0 +1,119 @@
+Historia de la Aviación
+
+La asociacion federal de aviación (FAA) de los Estados Unidos es la entidad referente para la regulación del diseño, certificación y operación de aeronaves a nivel mundial. DUrante los primeros años de vuelos tripulados, la aviación era libre para todos sin haber algún órgano de gobierno que estableciera políticas o regulaciones para hacer cumplir las normas de seguridad. 
+
+La EASA también es una agencia importante en la aviación.
+
+Los primeros vuelos fueron realizados por gente pudiente por deporte ya que era costoso, sin embargo P.E. Fansier, un empresario de Florida en asociacion con TOm Benoist, un pionero en la construccion de aeroplanos realizaron el primer vuelo comercial de la historia por 400 USD.
+
+El 20 de mayo de 1926, el congreso de los EUA aprobo la legislacion de comercio aereo, la cual posteriormente asignaria a la secretaria de comercio de regular la seguridad de la navegacion aere. Asi fue como nacio la division de aeronautica (Aeronautics Branch).
+
+A mitad del siglo, el trafico aereo se habia incrementado considerablemente y los motores Jet se introdujeron en la aviacion civil. Esto resulto en una serie de colisiones de altura media lo cual abrio la regulacion.
+
+La FAA es responsable de regular la seguridad en la aviacion civil. ESta tarea concreta por medio de reglas publicadas en el Codigo de Regulaciones Federales (CFR)
+
+Título 14 es importante lmao.
+
+Handbooks: son manuales tecnicos desarrollados para proporcionar informacion.
+
+Advisory Circulas: un AC es un documento informativo que la FAA distribuye a la comunidad de la aviacion. ESte puede ser en forma de un libro de texto utilizado en un aula o documento. Deben ser utilizados como informativos solamente y no reglamentos.
+Proporciona un metodo aceptable, claramente entendido para cumplir con una regulacion. Estandariza su aplicaicon y estandariza la implementacion para la industria. Clarificar malentendidos.
+
+La FAA clasifica las aeronaves de acuerdo a diferentes rubros:
+-Caracteristicas y propoiedades fisicas: Aeroplano, planeador, aviones ligeros, etc.
+-Tamaño y peso: Large aricraft, LIght sport Aircraft, Small Aircraft (12,500 libras o menos).
+-Tipo de certificación: Category, Class, Type (son similares en diseño).
+
+Una aeronave es un dispositivo que se utiliza, o se tiene la intencion de utilizar para volar de acuerdo con el titulo 14 del codigo federal de regulaciones (CTR 14) parte 1. ESte se define como una aeronave impulsada por motor, que es maniobrada utilizando la reaccion dinamica del aire contra sus alas durante el vuelo. Otro termino no utilizado es el de la aeronave con sistemas avionicos avanzados; que se define como una aeronave que posee un sistema de navegacion (GPS) o sistema de posicionamiento global con una exhibicion de un mapa movil, junto con un sistema de piloto automatico.
+
+Aeronavegabilidad (Airworthiness) es la medida de la capacidad que tiene una aeronave para operar en condiciones seguras. Las normas de aeronavegabilidad se aplican a las diferentes categorias>
+
+-Aeronaves de utilidad, acrobatico y de ruta
+-Aeroplanos de transporte.
+-Categoria Normal
+-Aeronaves de motor rotativo.
+-Globos no tripulados
+-TUrbinas de aeronaves
+-Helices
+
+Type Cetificate (TC): La FAA emite un cetrificado tipo TC para el producto cuando esta  [...]
+
+Certificate of Airworthiness (CofA): documento que certifica esa madre de una aewronave, el cual es otorgado cpor la autoridad de aviacion. ESte certificado se conserva siempre que la aeronave siga cumpliendo con sus especificaciones, lo que se conoce como mantenimiento de la aeronavegabilidad (Continuing Airworthiness). ESte certificado debe llevarse en el avion durante todas las operaciones de vuelo.
+
+Componentes principales:
+
+-FUselajes: el fuselaje es el cuerpo central de la aeronave y esta dise;ado para transportar la tripulacion, pasajeros y carga. Tambien proporciona la conexion estreuctural de las alas y la cola.
+
+Existen distintos tipos de fuselajes: Monocoque (palabra en frances de "casco" y es el metodo mas utilizado en la actualidad), Fuselaje Truss, Fuselaje Composite (los materiales compuestos son sistemas de matriz de fibra reforzada. En aeronavez la matriz mas comun es la resina de epoxico. Uno d los problemas mas comunes es la proteccion contra impacto de rayos, en fuselajes de aluminio la corriente se disipa en la superficie conductiva, sin embargo la resina utilizada en el composite es un aislante perfecto).
+
+-Alas: son estructuras adheridas a cada lado del fuselaje y las superficies de elevacion principales que mantienen el aeroplano en vuelo. Los principales elementos estructurales del ala son los spars ...
+
+-Cola (Empennage): Las superficies fijas del empennage se conocen como el estabilizador horizontal y vertical. Las superficies moviles incluyen el rudder, el elevador y una o mas Trim Tabs.
+
+-Tren de aterrizaje (Landing gear): el tren de aterrizaje es el apoyo principal del aeroplano cuando se encuentra estacionado, avanzando, despegando o aterrizando. Aviones con tren de aterrizaje convencional tiene dos llantas enfrente y una tercera atras (tailwheel). Cuando la tercera rueda se encuentra en la nariz, se le llama nosewheel.
+
+-Generador de poder (power plant): funcion principal del motor es propocionar la energia...
+
+SUBCOMPONENTES:
+
+Los subcomponentes basicos son el airframe, sistema electrico, controles de vuelo y frenos.
+
+-Airframe: es la estructura basica de un avion y esta diseñada para soportar todas las fuerzas aerodinámicas, así como las tensiones impuestas por el peso del combustiblre, tripulación y carga.
+
+-Sistema electrico (EWIS): practicamente todos los aviones ocntienen algun tipo de sistema electrico. Los aviones modernos tienen sistemas electricos complejo que controlan casi todos los aspectos de vuelo.
+
+-COntroles de vuelo (FLight controls): controles primarios de vuelo. Incluyen las superficioes de control en una aernave de ala fija (alerones, elevadores y timon).
+
+-Frenos.
+
+
+SISTEMAS DE LOCACION NUMERICA:
+
+-Fuselage Stations (Fus, Santa o FS: se numeran en pulgadas de una referncia o punto cero conocido como los datos de referencia, tipicamente desde la nariz de la aeronave.
+
+-Buttock line o butt line (BL): es un plano vertical por el centro de la aeronave donde las mediciones suelen hacerse hacia la izquierda o derecha. Usualmente el lado izquierdo correpsonde ...
+
+-Water Line (WL): es la medida de la altura en poulgadas perpendicular de un plano horizontal situado generalmente en tierra, piso de la cabina o algun otro punto de facil referencia.
+
+INSTRUMENTACION Y GPS:
+
+COn el lanzamiento de los sistemas de visualizacionde vcuelo electronicos, instromuentos convencionales han sido reemplazados por multiples pantallas de cristal liquido (LCD).
+
+EL AIRE COMO UN FLUIDO:
+Los gases tambien son fluidos. Los liquidos generalmente no s eresistena a deformaciones cuando incluso la mas pequeña tensión se aplica, o si se resisten es solo ligeramente. Llamamos a esta ligera resistencia viscosidad.
+
+-Viscosidad: es la propiedad de un fluido que causa la resistencia a fluir (??? LOL)
+
+TEORIAS DE FUERZA DE ELEVACION:
+
+Un ala moviendose a traves del aire genera una fuerza de sustentacion. Aquí aplican las leyes básicas de movimiento de Newton. Un objeto logra ponerse en vuelo cuando rompe la inercia, pero se mantiene en vuelo una vez en movimiento debido a las fuerzas que actúan sobre él.
+
+
+PERFIL ALAR: un perfil alar (airfoil) es una estructura diseñada para obtener una reaccion sobre su superficie desede el aire a traves de la cual se mueve. EL aire actua de diversas maneras cuando sometidos a diferentes presiones y velocidades.
+
+ANGULO DE ATAQUE: distribucion de la presion: experimentos han determinado que los flujos de aire a lo largo de la superficie del un ala en diferentes angulos de ataque, hay regiones a lo largo de la supercficie donde la presion es negativa o menor que la atmosferica. Esta presion negativa en la superficie superior crea una fuerza relativamente grande en el ala que es causada por la presion positiva que desde el aire golpea la superficie inferior del ala.
+
+FUERZAS ACTUANDO EN UNA AERONAVE:
+-Empuje, arrastre, elevacion y peso son las fuerzas que actuan sobre la nae.
+
+EJES DE UNA AERONAVE:
+
+Los ejes de un avion son tre slineas imaginarias que pasan por el centro de gravedad de la aeronave. Los ejes pueden considerarse ocmo ejes imaginarios alrededor del cual gira el avion. Los tres ejes pasan por el CG en angulos de 90 grados entre si.
+
+VUELOS A ALTA VELOCIDAD:
+
+-Subsonic versus sopersonic flow: En aerodinamica subsonica, la teoria de la elevacion se basa en las pfuerzas generadas en un cuerpo y un gas movil en que esta inmerso. La compresibilidad del aire es de suma importancia a velocidades que se acercan a la velocidad del sonido. En estos rangos de velocidad, la compresibilidad causa un cambio en la densidad del aire alrededor de un avion.
+
+Subsonico: Mach debajo de 0.75
+Transonico: mach de 0.75 a 1.20
+Supersonico: Mach de 1.20 a 5.00
+Hipersonico: Mach arriba de 5.00
+
+Mach: es la relacion entre la velocidad de la aeronae a la velocidad del sonido en las mismas condiciones atmosfericas. UN avioj que viaja a la velocidad del sonido viaja a MAch 1.0
+
+CONTROLES DE VUELO:
+
+---Controles primarios:
+-Alirons (alerones): los alerones hacen que el avion gire (roll) sobre el eje longitudinal. Los alerones estan en el borde exterior de cada ala y se mueven en direccion opuesta.
+-Elevator (Elevador): el elevador controla el pitch sobre el eje lateral.
+-Rudder (timon) El timon de direccion controla el movimiento del avion sobre su eje vertical. Este movimiento se denomina Yaw (desvio).

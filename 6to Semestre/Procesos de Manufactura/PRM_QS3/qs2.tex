@@ -1,0 +1,81 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Cuestionario \#3: Procesos de Fundición}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 394}
+\date{Marzo 17, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Procesos de Manufactura}
+\lhead{Cuestionario \#3}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+	\item ¿Cuáles son algunas de las limitaciones y desventajas de la fundición?
+
+		Limitaciones en las propiedades mecánicas, porosidad, precisión dimensional pobre y acabados malos en las piezas, peligro al trabajar con metales a altas temperaturas y problemas ambientales.
+
+	\item ¿Cuál es la diferencia entre molde abierto y molde cerrado?
+
+		El molde abierto es simplemente una cavidad abierta donde el metal líquido la llena. Para el molde cerrado existe una pequeña vía que permite el flujo de metal fundido hacia la cavidad.
+
+	\item ¿Cuál es el proceso de fundición de mayor importancia comercial?
+
+		El sand-casting o fundición a la arena, dado que es el proceso de fundición mayormente utilizado y casi todos las aleaciones fundidas pueden ser fundidas a la arena. Es uno de los pocos procesos que pueden ser utilizados para metales con un punto de fusión alto. Su versatilidad permite la fundición de partes pequeñas a muy grandes y en cantidades de producción de cientos a millones.
+
+	\item ¿Qué significa el termino sobrecalentamiento?
+
+		Llevar a un metal más allá de su punto de fusión, a tal grado en donde ciertas propiedades cambien, ocurra porosidad, etc. Se busca tener una temperatura apropiada ya que esto afecta la calidad del fundido.
+
+	\item ¿Por qué debe evitarse el flujo turbulento de un metal fundido en el molde?
+		
+		Tiende a acelerar la formación de óxido que pueden quedarse atrapados durante la solidificación, degradando la calidad del fundido. También puede ocurrir erosiones lo cual afecta la geometría general de la parte fundida.
+
+	\item Mencione algunos de los factores que afectan la fluidez de un metal derretido durante el vertido en la cavidad del molde.
+
+		Factores que afectan la fluidez (inverso de la viscosidad) son la temperatura de vaciado relativa al punto de fusión, composición del metal viscosidad del metal líquido y la transferencia de calor hacia los alrededores.
+
+	\item ¿En qué difiere la solidificación de metales puros respecto a las aleaciones?
+
+		Los metales puros se solidifican a una temperatura constante igual al a su punto de congelación, el cual es el mismo al punto de fusión. Estos puntos son bastante conocidos.
+
+		Por otro lado, las mayoría de las aleaciones se congelan a lo largo de un rango de temperatura en lugar de un punto especíico. El rango exacto depende de la composición de la aleación y el sistema de aleación. Existe una región en los diagramas de fase de las aleaciones conocida como \textit{mushy zone}, debido a su consistencia suave.
+
+	\item ¿Qué es una aleación eutéctica?
+
+		Es una aleación con una composición particular en la que las curvas que describen la fase líquida y sólida están a la misma temperatura, por lo que la solidificación ocurre a una temperatura constante en lugar de un rango de temperatura.
+
+	\item Identificar 3 fuentes de contracción en un metal fundido después del vaciado.
+
+		(1) contracción líquida durante el periodo de enfriamiento previo a la solidificación, (2) contracción durante el cambio de fase de líquido a sólido, conocido como contracción de solidificación, y (3) contracción térmica del fundido ya sólido durante su enfriamiento a temperatura ambiente.
+
+\end{enumerate}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

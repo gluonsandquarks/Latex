@@ -1,0 +1,57 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[framed, numbered]{matlab-prettifier}
+%\usepackage[framed, numbered, autolinebreaks, useliterate]{mcode}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Ensayo EWIS}
+\author{Carlos Vásquez \and 1155057}
+\date{Mayo 9, 2019}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Ensayo EWIS}
+\lhead{Aviónica}
+\rfoot{\thepage}
+% Inicio del documento
+\begin{document}
+\maketitle
+Un sistema de interconexión de cableado eléctrico o electric wiring interconection system (EWIS por sus siglas en inglés) es el cableado del sistema y los componentes (tales y de haces de abrazaderas, empalmes de cables, etc.) para un sistema complejo. Este tipo de cableado se adoptó por las investigaciones posteriores a los accidentes de los vuelos TWA 800 y SwissAir 111. Accidentes que fueron causados gracias a la pobre distribución, cuidado y manutención del cableado. Estas equivocaciones en el cableado resultaron en chispas que entraron al tanque de gas, terminando en dos accidentes con 459 muertes.
+
+El proyecto EWIS mejoró cambió esto al tener que pasar todos los componentes por estándares de calidad, necesita ser instalado de acuerdo a las limitaciones de los componentes EWIS, ser instalados en función a lo que deben de hacer sin degradar la navegabilidad del avión y deben ser diseñados de tal manera en que minimice la tensión mecánica del avión. 
+
+Para empezar un proyecto se debe realizar un revisado de todos los requerimientos que se tienen que cumplir para poder crear un calendario de entregas y actividades que se deben cumplir. Se debe de crear un equipo de trabajo con diferentes niveles de habilidad y experiencia al que se les debe instruir las reglas y brindar las herramientas para que se cumplan las expectativas que se tienen del equipo.
+
+Una de los cambios más grandes que se ven en la circuitería del avión es la durabilidad del cableado, ya que está diseñado para que en vez de 7 años dure los 20 años de vida que el avión dure trabajando. 
+
+También se tiene un aprovechamiento de la potencia aprovechada en base a la señal de corriente administrada. Esto se da gracias a los avances en la electrónica de potencia que se dan gracias a la “moda” de la energía verde que trata acerca del aprovechamiento de la energía que se usa. Las investigaciones en base a esto también nos dan como resultado la obtención de dispositivos semiconductores con mayor velocidad de respuesta a menor tamaño.  
+
+Otra medida de seguridad es el uso de cables dentro de insuladores como el Kapton, que es el más utilizado en este tipo de fuselajes. 
+
+Uno de los problemas de trabajar con tantos arneses de conexión es el tiempo que se toma en instalar los 345 arneses con mas de 33mil segmentos de cableado en un espacio reducido. Para esto se tienen que tomar en cuanta le separación entre sistemas por arnés. Esto es no tener los mismos tipos de sistemas y el backup en el mismo arnés, ya que en caso de accidente o fallo se perderían los dos sistemas.
+
+Se tiene que tener en cuenta también la separación EMI o de señal ya que hay cables que no pueden vivir juntos. 
+
+También se debe tener en cuenta donde puedes usar cierto tipo de cables. Ya que puede que un tipo de cable pueda funcionar muy bien en el fuselaje pero no va a funcionar fuera él.
+%%%%%  Bib
+\renewcommand\refname{Referencias}
+\printbibliography
+\end{document}

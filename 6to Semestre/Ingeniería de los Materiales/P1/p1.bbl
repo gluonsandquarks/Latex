@@ -1,0 +1,149 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{isamu11}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=6f9dbf5f05b59b29190b3cc28e14655d}{%
+           family={Higuchi},
+           familyi={H\bibinitperiod},
+           given={Isamu},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{6f9dbf5f05b59b29190b3cc28e14655d}
+      \strng{fullhash}{6f9dbf5f05b59b29190b3cc28e14655d}
+      \strng{bibnamehash}{6f9dbf5f05b59b29190b3cc28e14655d}
+      \strng{authorbibnamehash}{6f9dbf5f05b59b29190b3cc28e14655d}
+      \strng{authornamehash}{6f9dbf5f05b59b29190b3cc28e14655d}
+      \strng{authorfullhash}{6f9dbf5f05b59b29190b3cc28e14655d}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2011 SERDP-ESTCP Symposium}
+      \field{title}{NASA's Materials And Processes Technology Information System (MAPTIS)}
+      \field{year}{2011}
+      \verb{urlraw}
+      \verb https://apps.dtic.mil/dtic/tr/fulltext/u2/a554377.pdf
+      \endverb
+      \verb{url}
+      \verb https://apps.dtic.mil/dtic/tr/fulltext/u2/a554377.pdf
+      \endverb
+    \endentry
+    \entry{melkert07}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=7469b9464a82c999035570eee55e34de}{%
+           family={Melkert},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7469b9464a82c999035570eee55e34de}
+      \strng{fullhash}{7469b9464a82c999035570eee55e34de}
+      \strng{bibnamehash}{7469b9464a82c999035570eee55e34de}
+      \strng{authorbibnamehash}{7469b9464a82c999035570eee55e34de}
+      \strng{authornamehash}{7469b9464a82c999035570eee55e34de}
+      \strng{authorfullhash}{7469b9464a82c999035570eee55e34de}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the European Transport COnference (ETC) 2007}
+      \field{title}{Superbus: using aerospace technology to make high speed public transport more sustainable}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://trid.trb.org/view/855605
+      \endverb
+      \verb{url}
+      \verb https://trid.trb.org/view/855605
+      \endverb
+    \endentry
+    \entry{un2020}{online}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=2d661e9167bd3a268ea03a3ee152926c}{%
+           family={Nations},
+           familyi={N\bibinitperiod},
+           given={United},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{fullhash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{bibnamehash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{authorbibnamehash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{authornamehash}{2d661e9167bd3a268ea03a3ee152926c}
+      \strng{authorfullhash}{2d661e9167bd3a268ea03a3ee152926c}
+      \field{sortinit}{N}
+      \field{sortinithash}{f7242c3ed3dc50029fca1be76c497c7c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{United Nations Sustainable Development}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://www.un.org/sustainabledevelopment/
+      \endverb
+      \verb{url}
+      \verb https://www.un.org/sustainabledevelopment/
+      \endverb
+    \endentry
+    \entry{sabaghi16}{article}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=0e4bb54aa20a604ee03f88a46cec34ca}{%
+           family={Sabaghi},
+           familyi={S\bibinitperiod},
+           given={Madhi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0e4bb54aa20a604ee03f88a46cec34ca}
+      \strng{fullhash}{0e4bb54aa20a604ee03f88a46cec34ca}
+      \strng{bibnamehash}{0e4bb54aa20a604ee03f88a46cec34ca}
+      \strng{authorbibnamehash}{0e4bb54aa20a604ee03f88a46cec34ca}
+      \strng{authornamehash}{0e4bb54aa20a604ee03f88a46cec34ca}
+      \strng{authorfullhash}{0e4bb54aa20a604ee03f88a46cec34ca}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{13th GLobal Conference on Sustainable Manufacturing --- Decoupling Growth from Resource Use (Procedia CIRP Vol. 40)}
+      \field{title}{Towards a sustainable dissasembly/dismantling in aerospace industry}
+      \field{year}{2016}
+      \verb{doi}
+      \verb https://doi.org/10.1016/j.procir.2016.01.088
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

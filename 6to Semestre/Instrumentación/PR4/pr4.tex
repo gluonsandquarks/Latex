@@ -1,0 +1,163 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\usepackage{listings}
+\usepackage{verbatim}
+\input{arduinoLanguage.tex}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Práctica \#4: Intensidad de Luminosidad de un LED}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 395}
+\date{Febrero 26, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Instrumenación}
+\lhead{Práctica \#4}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+\section*{Introducción}
+El control de distintas salidas en Arduino permite la manipulación de varios dispositivos. Existe una cantidad de dispositivos que pueden ser controlados por señales analógicas, es decir, que su intensidad en voltaje varíen de manera continua con el tiempo, en lugar de sólo tener dos estados posibles (en el caso digital, encendido y apagado). Esto proporciona un control mucho mayor al que nos otorgaría un control puramente digital.
+
+Arduino cuenta con una funcionalidad que \textit{simula} las señales analógicas mediante un proceso llamado \textit{Pulse Width Modulation} (PWM), que sigue siendo digital, pero entra en cuestión la frecuencia y una forma de onda de tipo pulso con la que se modulan otras ondas.
+
+\section*{Objetivo}
+Familiarizar al alumno con las salidas analógicas de Arduino, llevar a cabo una práctica que demuestre el principio de estas salidas y explicar los fundamentos teóricos de las salidas PWM en Arduino.
+\section*{Marco Teórico}
+\textbf{Entrada analógica:} Una señal analógica es una magnitud que puede tomar cualquier valor dentro de un intervalo –Vcc a +Vcc. Una señal analógica de tensión entre 0V y 5V podría valer 2.72, o cualquier otro valor entre estos rangos; a diferencia de las entradas digitales, que sólo pueden leer valores de 0V o 5V.
+
+\textbf{analogRead():} Registra el valor especificado en el pin análogo, estos pines van del A0 al A5 en la mayoría de las placas de arduino. Los valores de voltaje de entrada son leídos entre 0 y 5V, estos valores se convierten en enteros entre 0 y 1023.
+
+\textbf{analogWrite():} Escribe un valor analógico (PWM wave) a un pin. Se puede utilizar para iluminar un LED y variar su brillo o manejar un motor a varias velocidades.
+
+\textbf{Pulse Width Modulation:} Es una técnica para obtener resultados analógicos por medios digitales. El control digital es utilizado para crear una onda cuadrada, una señal entre encendido y apagado.
+
+\textbf{Potenciómetro:} Es un dispositivo conformado por 2 resistencias en serie, las cuales poseen valores que pueden ser modificados por el usuario (González, 2016). Los potenciómetros utilizan tres terminales y suelen utilizar circuitos de poca corriente. El valor del potenciómetro se expresa en ohmios y el valor del potenciómetro es expresado por el valor máximo de la resistencia que puede tener.
+
+\section*{Materiales y Equipo}
+\begin{itemize}
+	\item Arduino UNO
+	\item Arduino IDE
+	\item Proteus 8 Professional
+	\item Potenciómetro (1)
+	\item LEDs (1)
+	\item Resistencia 220 $\Omega$ (1)
+	\item Referencias de internet (StackExchange, Arduino.cc)
+\end{itemize}
+
+\section*{Desarrollo}
+El código en esta práctica es muy similar al de la práctica \#3, pero la funcionalidad de éste es lo que cambia. La meta es lograr controlar la intensidad de la luminosidad de un LED conectado a Arduino mediante un potenciómetro. Las entradas de Arduino capaz de generar salidas mediante PWM son algunas cuantas, y en nuestro caso utilizaremos la salida 11 para este propósito. El principio del código se mantiene similar al que teníamos anteriormente.
+
+\begin{lstlisting}[language=Arduino]
+	int led = 11;
+	float freq;
+	float freq1;
+
+	void setup() {
+	  pinMode(led, OUTPUT);
+	  pinMode(A0, INPUT);
+	  Serial.begin(9600);
+	}
+\end{lstlisting}
+
+Hemos añadido en la línea 3 una nueva variable $freq1$, la cual almacenará el valor de la intensidad del LED. Hicimos esto para conservar la funcionalidad del código anterior y tener la oportunidad de controlar la intesidad y el parpadeo de LED en caso de ser necesario. El puerto de comunicación serial se inicializó solamente con fines de $debugging$ como se explicaba en la práctica anterior. Después de haber hecho el bloque anterior de código procedimos al siguiente:
+
+\begin{lstlisting}[language=Arduino]
+	void loop() { 
+	  freq = analogRead(A0);
+	  freq1 = 254*(freq/1023);
+	  //freq = 5000*(freq/1023); 
+	  Serial.print(freq);
+	  Serial.print(" ");
+	  Serial.println(freq1);
+	  analogWrite(led, freq1);
+	  //delay(freq);
+	  //analogWrite(led, freq1);
+	  //delay(freq);
+	}
+\end{lstlisting}
+
+Podemos ver que sustancialmente el código es lo mismo, sin embargo se realiza ahora una conversión distinta. Aquella lectura tomada por $analogRead$ se manipula en la variable $freq1$ para que sus valores vayan de 0 a 254, esto dado que la función $analogWrite$ sólo puede escribir valores que se encuentran en ese rango. Si se sale del rango de estos valores no se obtendrá el comportamiento adecuado. Dado que la función $analogWrite$ es controlada por la variable $freq1$, cuando se modifique la posición de potenciómetro, la intensidad del LED cambiará. Es así como obtenemos la manipulación de la luminosidad mediante las salidas analógicas de Arduino.
+
+\subsection*{Código}
+
+\begin{lstlisting}[language=Arduino]
+	int led = 11;
+	float freq;
+	float freq1;
+
+	void setup() {
+	  pinMode(led, OUTPUT);
+	  pinMode(A0, INPUT);
+	  Serial.begin(9600);
+	}
+
+	void loop() { 
+	  freq = analogRead(A0);
+	  freq1 = 254*(freq/1023);
+	  //freq = 5000*(freq/1023); 
+	  Serial.print(freq);
+	  Serial.print(" ");
+	  Serial.println(freq1);
+	  analogWrite(led, freq1);
+	  //delay(freq);
+	  //analogWrite(led, freq1);
+	  //delay(freq);
+	}
+\end{lstlisting}
+
+\subsection*{Diagrama Esquemático}
+
+A continuación se muestra el diagrama esquemático:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{circ.png}
+	\caption{Esquema del circuito en Proteus.}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{1.jpg}
+	\caption{Información serial sobre el pulso modulado.}
+\end{figure}
+
+\section*{Conclusión}
+La utilización de esta salidas analógicas permiten un control mucho más amplio de los dispositivos que se comunican con Arduino. En ocasiones será más útil contar con un control puramente digital, pero en otras cuestiones será de gran utilidad contar con la posibilidad de simular los voltajes analógicos y lograr hacer que éstos varíen. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{bredboard.jpg}
+	\caption{Circuito físico en protoboard.}
+\end{figure}
+
+\section*{Hexdump}
+A continuación se presenta el \textit{hexdump} del archivo producido por el ensamblador. Estos archivos hexadecimales son de gran utilidad en programas más complejos para su \textit{debugging}.
+
+\scriptsize
+\verbatiminput{dump.txt}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

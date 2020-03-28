@@ -1,0 +1,121 @@
+% Especificaciones del tamaño de letra, tamaño de hoja, márgenes, librerias, etc.
+\documentclass[12pt, letterpaper]{article}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{float}
+\usepackage[margin=1in]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+
+% Enlace Bibliografía
+\usepackage{csquotes}
+\usepackage[notes,backend=biber]{biblatex-chicago}
+\addbibresource{referencias.bib}
+
+% Titulo, autores, fecha.
+\title{Cuestionario \#1: Montaje de Componentes Electrónicos}
+\author{Carlos A. Vásquez Castañeda \and 1155057 \and Grupo 394}
+\date{Marzo 13, 2020}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Procesos de Manufactura}
+\lhead{Cuestionario \#1}
+\rfoot{\thepage}
+
+
+% Inicio del documento
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+	\item ¿Cuál es la finalidad de la operación de SMT?
+
+		Montar componentes (la mayoría de las veces diminutos) sobre la superficie de la placa, de manera precisa y rápida.
+
+	\item ¿Qué material de tipo directo entra como insumo a esta operación?
+
+		Resistencias, diodos y la placa donde los componentes descansan y se realiza la conexión eléctrica.
+
+	\item ¿Qué material de tipo indirecto entra en esta operación?
+
+		La soldadura y la pasta para soldar.
+
+	\item ¿Cuáles son las máquinas relacionadas con esta operación?
+
+		La impresora de pasta para soldar, la máquina de ensamblaje (donde se colocan los componentes automáticamente),  el horno donde se derrite la soldadura colocada en los componentes y la máquina para la inspección óptica automatizada, donde se revisan los componentes de la placa.
+
+	\item ¿Cuál es el tipo de instalaciones que necesitan dichas máquinas para operar?
+		Necesitan las condiciones físicas adecuadas especificadas por el fabricante para el funcionamiento correcto de las máquinas, así como una disposición espacial lógica de las mismas, como una línea de producción que facilite el traslado de la placa entre máquinas.
+
+	\item ¿Cuáles son las refacciones o partes con mayor frecuencia de cambio por desgaste u obsolescencia en estas máquinas?
+
+		Las piezas móviles son las que terminan siendo las más reemplazadas, en especial si deben ser muy precisas y se desplazan a altas velocidades, ya que los amortiguadores resultan expuestos a estrés constantemente. Otras piezas podrían ser las que sufren estrés constante debido a cambios altos de temperatura, como los que se encuentran en los hornos utilizados.
+
+	\item ¿Cuántas máquinas de montaje de componentes observo y cuáles son sus diferencias?
+
+		Máquinas como tal sólo se encontraba una (de parte del video de SMA), donde se realizó el montaje de componentes diminutos a altas velocidades. Por el contrario, el montaje de componentes más grandes fue hecho a mano por operadores. El primer montaje es mucho más rápido sin emabrgo sólo trata a componentes relativamente pequeños. El segundo montaje es bastante lento en comparación del primero pero tiene la ventaja de poder ser más certero al momento de montar los componentes.
+
+	\item ¿Qué materiales se utilizan en estos sistemas?
+
+		Pasta para soldar, soldadura, circuitos integrados, PCBs.
+
+	\item ¿Cuáles son los elementos que determinan la disponibilidad de una máquina?
+
+		Los materiales que son necesarios para su correcta operación (se cuenta con la suficiente pasta para soldar, soldadura), la cantidad de componentes necesarios para realizar una operación (resistencias, diodos), funcionamiento mecánico correcto de la máquina, el tiempo que dure hasta que se ponga en marcha de nuevo, tiempo de operación, accidentes y paros debidos a éstos.
+
+	\item ¿Cuáles considera los elementos del mayor tiempo de ajuste o "set up" en cambio de material?
+
+		Los paquetes de componentes que utiliza la máquina y el material que usa como la soldadura.
+
+	\item ¿Cuál es el flujo del material en esta operación?
+
+		La placa ingresa a la máquina donde se aplica la pasta para soldar a los agujeros destinados a hacer las conexiones eléctricas, los paquetes de materiales se dispensan a la máquina y ésta coloca los componentes uno por uno en los lugares destinados a éstos, se aseguran mediante soldadura y se utiliza una inspección de los materiales.
+
+	\item ¿Qué equipos se utilizan para el manejo y transporte de materiales?
+
+		Bandas para el transporte entre los procesos de las máquinas, o estantes y carritos que transportan las placas ya listas.
+
+	\item ¿Qué auditorías son realizadas para asegurar la calidad en esta operación?
+
+		Se inspecciona visualmente el material mediante máquinas que utilizan imágenes de referencia para revisar la colocación adecuada de los componentes, se verifican de esta manera dos veces. Posteriormente se hace una prueba de voltaje en distintas secciones de la placa y también se verifica la correcta instalación del firmware a la placa.
+
+	\item ¿Cuáles son los principales defectos del producto o fallas originadas en esta operación y cuáles son sus posibles causas?
+
+		La colocación errónea de componentes sobre la placa, debido a una calibración inadecuada de las máquinas o al error humano al momento de realizar el montaje manual.
+
+	\item ¿Cuándo se rechaza el material?
+
+		Cuando no cumple con las especificaciones de calidad, como lo son la colocación apropiada de los componentes, el voltaje adecuado medido en las secciones específicas de la placa.
+
+	\item ¿Cuántas personas apoyan el área directamente? ¿De qué departamentos?
+
+		Aproximadamente unas 25 a 30 personas, el primer proceso de SMD donde se montan los componentes utiliza aproximadamente unas 3 personas, el segundo proceso de THT donde se montan los componentes más grandes utiliza aproximadamente 20 a 25 personas, contando aquellas encargadas de la inspección, y el último proceso de revisión y recubrimiento utiliza aproximadamente 3 a 5 personas-
+
+	\item ¿Cuál es la relación de dichas personas con este departamento?
+		Totalmente directo sobre el producto, ya que cada proceso es indispensable en el funcionamiento deseado del producto.
+
+	\item ¿Cuál es el mínimo "rendimiento" esperado?
+
+		Que la placa funcione de la manera correcta, tenga las lecturas eléctricas tolerables y cuente con el firmware.
+
+	\item ¿Cuántos operadores se necesitan para trabajar el equipo?
+
+		Depende el equipo en cuestión, sin embargo en promedio, los equipos y máquinas no necesitan más allá de dos o tres operadores, siendo el mínimo un operador por máquina.
+
+	\item ¿Cuáles son las salidas de esta operación considerando desechos o desperdicios?
+
+		PCBs desperdiciados, componentes mal adheridos o ya adheridos a la placa, sin embargo con mal contacto o mal posicionados, soldadura y pasta de soldar.
+
+\end{enumerate}
+
+%%%%%  Bib
+\renewcommand\refname{References}
+\printbibliography
+\end{document}

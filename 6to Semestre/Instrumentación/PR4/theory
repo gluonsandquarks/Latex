@@ -3,3 +3,6 @@ Pr. 4: Intensidad de Luminosidad de un LED.
 En proteus buscar una webada que se llama Virtual Terminal, tiene dos entradas que se llanman Rx y Tx. En el ícono del reloj???? Para poder realizar la comunicación Serial.
 
 fuera de eso, todo el circuito es el mismo que la práctica anterior.
+
+Explicar sobre salidas analogicas y los pulse width modulation (PWM) etcccc Como funcionan
+Por que las salidas van de 0 a 254
